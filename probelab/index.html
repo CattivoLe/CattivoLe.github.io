@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probe Lab — поддержка</title>
+<meta name="description" content="Probe Lab для iPhone: устройства в сети и их открытые порты, Bluetooth-метки рядом, проверка ссылок на фишинг и диагностика соединения.">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">Probe Lab</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Probe Lab</h1>
+<p class="lead">Карманная лаборатория цифровой безопасности: кто есть в вашей сети, какие порты у них открыты, какие метки Bluetooth рядом, куда ведёт ссылка и что на самом деле происходит с соединением.</p>
+
+<h2>Поддержка</h2>
+<p>Нашли ошибку или есть вопрос — создайте обращение в <a href="https://github.com/CattivoLe/CattivoLe.github.io/issues?q=%5BProbe%20Lab%5D">GitHub Issues</a>. Опишите модель iPhone, версию iOS и шаги, которые привели к проблеме.</p>
+<ul class="links">
+  <li><a href="privacy.html">Политика конфиденциальности</a></li>
+  <li><a href="https://github.com/CattivoLe/CattivoLe.github.io/issues/new?title=%5BProbe%20Lab%5D%20">Сообщить о проблеме</a></li>
+</ul>
+
+<h2>Частые вопросы</h2>
+<p><strong>Почему в сети не видны MAC-адреса некоторых устройств?</strong><br>iOS не даёт приложениям читать таблицу ARP напрямую. Probe Lab узнаёт адреса другими способами, но не всегда.</p>
+<p><strong>Почему не виден мой AirTag?</strong><br>iOS не отдаёт приложениям данные Apple из объявлений Bluetooth, поэтому AirTag выглядит как неизвестное устройство. О чужом AirTag, который перемещается вместе с вами, предупреждает сама iOS. Probe Lab распознаёт метки Tile, Samsung SmartTag, Chipolo и сети Find My Device.</p>
+<p><strong>Вкладка «Сеть» пишет «Сеть только с IPv6».</strong><br>Сеть не выдала iPhone адрес IPv4, а поиск устройств перебирает IPv4-подсеть. Проверки соединения, скорости и ссылок при этом работают.</p>
+<p><strong>Куда уходят мои данные?</strong><br>Никуда: всё хранится на iPhone. Какие сервисы видят ваш IP-адрес во время проверок, написано в <a href="privacy.html">политике</a>.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Probe Lab</h1>
+<p class="lead">A pocket digital-security lab: who is on your network and which ports they leave open, which Bluetooth tags are nearby, where a link really leads, and what is actually going on with your connection.</p>
+
+<h2>Support</h2>
+<p>Found a bug or have a question? Open an issue on <a href="https://github.com/CattivoLe/CattivoLe.github.io/issues?q=%5BProbe%20Lab%5D">GitHub Issues</a>. Include your iPhone model, iOS version and the steps that led to the problem.</p>
+<ul class="links">
+  <li><a href="privacy.html#en">Privacy Policy</a></li>
+  <li><a href="https://github.com/CattivoLe/CattivoLe.github.io/issues/new?title=%5BProbe%20Lab%5D%20">Report a problem</a></li>
+</ul>
+
+<h2>Frequently asked</h2>
+<p><strong>Why are some MAC addresses missing?</strong><br>iOS does not let apps read the ARP table directly. Probe Lab learns addresses in other ways, but not always.</p>
+<p><strong>Why don't I see my AirTag?</strong><br>iOS withholds Apple's advertisement data from apps, so an AirTag looks like an unknown device. iOS itself warns you when an AirTag that is not yours travels with you. Probe Lab recognises Tile, Samsung SmartTag, Chipolo and Find My Device tags.</p>
+<p><strong>The Network tab says "IPv6-only network".</strong><br>The network gave the iPhone no IPv4 address, and the device scan walks an IPv4 subnet. Connection, speed and link checks still work.</p>
+<p><strong>Where does my data go?</strong><br>Nowhere: it stays on the iPhone. Which services see your IP address during checks is listed in the <a href="privacy.html#en">privacy policy</a>.</p>
+</section>
+
+<footer>© 2026 Probe Lab</footer>
+</main>
+</body>
+</html>
