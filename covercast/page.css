@@ -1,0 +1,15 @@
+/* CoverCast's own additions to ../style.css: its brass, and pictures. */
+:root { --accent: #9a6a1f; }
+@media (prefers-color-scheme: dark) { :root { --accent: #d6a967; } }
+.hero { display: flex; gap: 24px; align-items: center; margin: 0 0 8px; }
+.hero img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+.hero h1 { margin: 0 0 6px; }
+.hero p { margin: 0; color: var(--muted); font-size: 19px; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 18px 0 28px; padding: 0; list-style: none; }
+.badges li { margin: 0; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 999px; font-size: 14px; color: var(--muted); }
+figure { margin: 28px 0; }
+figure img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--rule); }
+figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }
+.phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.phones img { display: block; width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--rule); }
+@media (max-width: 480px) { .hero img { width: 72px; height: 72px; border-radius: 16px; } .phones { gap: 8px; } .phones img { border-radius: 12px; } }
