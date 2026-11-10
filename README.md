@@ -9,11 +9,27 @@ CattivoLe.github.io/
 ├── index.html          список приложений
 ├── style.css           общий стиль
 ├── .nojekyll           отдавать файлы как есть
-└── probelab/
-    ├── index.html      поддержка (Support URL)
-    ├── privacy.html    политика конфиденциальности (Privacy Policy URL)
-    └── icon.png
+├── probelab/
+│   ├── index.html      поддержка (Support URL)
+│   ├── privacy.html    политика конфиденциальности (Privacy Policy URL)
+│   └── icon.png
+└── covercast/
+    ├── index.html      о приложении (Marketing URL)
+    ├── support.html    поддержка (Support URL)
+    ├── privacy.html    политика конфиденциальности (Privacy Policy URL, она же для Google Play)
+    ├── privacy-tv.html политика для Apple TV — тот же текст, что в поле Apple TV Privacy Policy
+    ├── page.css        свой акцент и картинки
+    ├── icon.png
+    └── img/            уменьшенные скриншоты, делает Tools/site_images.py в репозитории CoverCast
 ```
+
+Адреса CoverCast (вписаны в `fastlane/metadata/*/` репозитория CoverCast):
+
+- https://cattivole.github.io/covercast/
+- https://cattivole.github.io/covercast/support.html
+- https://cattivole.github.io/covercast/privacy.html
+- https://cattivole.github.io/covercast/privacy-tv.html
+- обращения — с «[CoverCast]» в заголовке.
 
 Адреса Probe Lab (уже вписаны в `ProbeLab/Model/AppLinks.swift` и
 `fastlane/metadata/*/`):
