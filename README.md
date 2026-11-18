@@ -9,15 +9,17 @@ Support pages and privacy policies for my apps.
 | --- | --- |
 | **CoverCast** — Now Playing для винила / for vinyl. iPhone, iPad, Apple TV, Android TV | [О приложении / About](https://cattivole.github.io/covercast/) · [Поддержка / Support](https://cattivole.github.io/covercast/support.html) · [Политика / Privacy](https://cattivole.github.io/covercast/privacy.html) · [Политика Apple TV / Apple TV privacy](https://cattivole.github.io/covercast/privacy-tv.html) |
 | **Probe Lab** — карманная лаборатория цифровой безопасности / a pocket digital-security lab. iPhone | [Поддержка / Support](https://cattivole.github.io/probelab/) · [Политика / Privacy](https://cattivole.github.io/probelab/privacy.html) |
+| **VideoHub Control** — пульт для Blackmagic Videohub / a remote for Blackmagic Videohub routers. iPhone, iPad | [О приложении / About](https://cattivole.github.io/videohubcontrol/) · [Поддержка / Support](https://cattivole.github.io/videohubcontrol/support.html) · [Политика / Privacy](https://cattivole.github.io/videohubcontrol/privacy.html) |
 
 ## Вопросы и ошибки / Questions and bugs
 
 Создайте обращение в [Issues](https://github.com/CattivoLe/CattivoLe.github.io/issues/new)
-и укажите приложение в заголовке: `[CoverCast] …` или `[Probe Lab] …`.
+и укажите приложение в заголовке: `[CoverCast] …`, `[Probe Lab] …` или `[VideoHub Control] …`.
 Напишите модель устройства, версию системы и что происходило.
 
 Open an [issue](https://github.com/CattivoLe/CattivoLe.github.io/issues/new) with
-the app's name in the title — `[CoverCast] …` or `[Probe Lab] …` — and include
+the app's name in the title — `[CoverCast] …`, `[Probe Lab] …` or
+`[VideoHub Control] …` — and include
 your device model, system version and what happened.
 
 ---
@@ -39,10 +41,17 @@ your device model, system version and what happened.
 │   ├── page.css          свой акцент и стили картинок поверх ../style.css
 │   ├── icon.png
 │   └── img/              скриншоты; делает Tools/site_images.py в репозитории CoverCast
-└── probelab/
-    ├── index.html        поддержка         → Support URL
+├── probelab/
+│   ├── index.html        поддержка         → Support URL
+│   ├── privacy.html      политика          → Privacy Policy URL
+│   └── icon.png
+└── videohubcontrol/
+    ├── index.html        о приложении      → Marketing URL
+    ├── support.html      поддержка         → Support URL
     ├── privacy.html      политика          → Privacy Policy URL
-    └── icon.png
+    ├── page.css          оранжевый акцент и стили картинок поверх ../style.css
+    ├── icon.png
+    └── img/              скриншоты из AppStore/screenshots репозитория VideoHubControl
 ```
 
 Каждая страница двуязычная: секции `#ru` и `#en` на одной странице, ссылки на

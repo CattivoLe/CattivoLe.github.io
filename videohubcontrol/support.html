@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VideoHub Control — поддержка</title>
+<meta name="description" content="Поддержка VideoHub Control: подключение к Blackmagic Videohub, рутинг, блокировка выходов, пресеты, покупки и частые вопросы.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">VideoHub Control</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Поддержка</h1>
+<p class="lead">VideoHub Control для iPhone и iPad: что делать, если матрица не подключается, кнопка не отправляет рутинг или пропали покупки.</p>
+
+<p>Нашли ошибку или есть вопрос — создайте обращение в <a href="https://github.com/CattivoLe/CattivoLe.github.io/issues?q=%5BVideoHub%20Control%5D">GitHub Issues</a>. Напишите модель матрицы, модель iPhone или iPad, версию iOS и что происходило. Если матрица ведёт себя странно, приложите журнал: Настройки → Send diagnostics.</p>
+<ul class="links">
+  <li><a href="https://github.com/CattivoLe/CattivoLe.github.io/issues/new?title=%5BVideoHub%20Control%5D%20">Сообщить о проблеме</a></li>
+  <li><a href="privacy.html">Политика конфиденциальности</a></li>
+  <li><a href="./">О приложении</a></li>
+</ul>
+
+<h2>Подключение</h2>
+<p><strong>«No Connect» или «Failure» при открытии матрицы.</strong><br>Телефон и матрица должны быть в одной сети. Проверьте IP-адрес матрицы в Blackmagic Videohub Setup и что iPhone не в гостевой сети Wi-Fi: в ней устройства обычно изолированы друг от друга. В Настройках iOS → Конфиденциальность и безопасность → Локальная сеть должен быть разрешён доступ для VideoHub Control.</p>
+<p><strong>Матрица не появляется в поиске.</strong><br>Поиск находит только матрицы, которые объявляют себя в сети. Старые модели этого не делают — добавьте адрес вручную кнопкой «+».</p>
+<p><strong>Матрица слушает не порт 9990.</strong><br>Допишите порт к адресу через двоеточие: <code>10.0.0.2:9991</code>.</p>
+<p><strong>У матрицы сменился адрес.</strong><br>Ничего делать не нужно: приложение помнит матрицу по её Unique ID и обновит адрес в сохранённой строке, когда найдёт её в сети.</p>
+<p><strong>«Connection lost» или «Reconnecting».</strong><br>Связь с матрицей прервалась. Приложение переподключается само, когда вы возвращаетесь в него и когда возвращается сеть; выбранный выход сохраняется.</p>
+
+<h2>Рутинг</h2>
+<p><strong>После первого тапа кнопка пишет «You sure?».</strong><br>Это подтверждение: команда уходит по второму тапу. Его можно выключить в Настройках → Confirmation Routing tap.</p>
+<p><strong>Кнопка пишет «Selected output locked».</strong><br>Выбранный выход заблокирован — вами («Output locked») или другим оператором («Locked by other»). Снимите блокировку кнопкой над колесом. Перед снятием чужой блокировки приложение спросит.</p>
+<p><strong>После отправки кнопка не нажимается.</strong><br>Рутинг уже отправлен и подтверждён («Done»). Поверните любое колесо, чтобы отправить что-то другое.</p>
+<p><strong>Как переименовать вход или выход?</strong><br>Удерживайте колесо: верхнее переименовывает выход, нижнее — вход. Имя записывается в матрицу.</p>
+<p><strong>Тап по плашке с моделью.</strong><br>Переключает модель и имя матрицы, которое задано в Videohub Setup.</p>
+
+<h2>Пресеты и покупки</h2>
+<p><strong>Как сохранить и вызвать пресет?</strong><br>Выставьте рутинг, нажмите Save в правом верхнем углу и дайте пресету имя. Чтобы вызвать, удерживайте кнопку Routing, выберите пресет, затем отправьте его тапом по Routing. Пресеты хранятся на устройстве отдельно для каждой матрицы.</p>
+<p><strong>Нет кнопки Save или долгое нажатие ничего не открывает.</strong><br>Пресеты — встроенная покупка «Saving presets». На Studio Videohub пресеты недоступны.</p>
+<p><strong>Покупки пропали после переустановки или на новом устройстве.</strong><br>Настройки → Restore purchases, с тем же Apple ID, которым покупали.</p>
+<p><strong>Можно попробовать без матрицы?</strong><br>Да: в списке есть Demo Videohub 16×16. Его можно удалить смахиванием, обратно он не вернётся.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Support</h1>
+<p class="lead">VideoHub Control for iPhone and iPad: what to do when a router does not connect, Routing does not send, or purchases have gone missing.</p>
+
+<p>Found a bug or have a question? Open an issue on <a href="https://github.com/CattivoLe/CattivoLe.github.io/issues?q=%5BVideoHub%20Control%5D">GitHub Issues</a>. Include the router model, your iPhone or iPad model, the iOS version and what happened. If the router misbehaves, attach the log from Settings → Send diagnostics.</p>
+<ul class="links">
+  <li><a href="https://github.com/CattivoLe/CattivoLe.github.io/issues/new?title=%5BVideoHub%20Control%5D%20">Report a problem</a></li>
+  <li><a href="privacy.html#en">Privacy Policy</a></li>
+  <li><a href="./#en">About the app</a></li>
+</ul>
+
+<h2>Connecting</h2>
+<p><strong>"No Connect" or "Failure" when opening a router.</strong><br>The phone and the router must be on the same network. Check the router's IP address in Blackmagic Videohub Setup, and that the iPhone is not on a guest Wi-Fi network, which usually keeps devices apart. Local Network access must be allowed for VideoHub Control in iOS Settings → Privacy &amp; Security → Local Network.</p>
+<p><strong>The router does not show up in the search.</strong><br>The search finds only routers that advertise themselves on the network. Older models do not — add the address by hand with "+".</p>
+<p><strong>The router is not on port 9990.</strong><br>Add the port to the address after a colon: <code>10.0.0.2:9991</code>.</p>
+<p><strong>The router's address changed.</strong><br>Nothing to do: the app knows the router by its Unique ID and updates the address in the saved row once it finds the router on the network.</p>
+<p><strong>"Connection lost" or "Reconnecting".</strong><br>The connection to the router dropped. The app reconnects by itself when you come back to it and when the network returns; the selected output is kept.</p>
+
+<h2>Routing</h2>
+<p><strong>After the first tap the button says "You sure?".</strong><br>That is the confirmation: the route goes out on the second tap. Turn it off in Settings → Confirmation Routing tap.</p>
+<p><strong>The button says "Selected output locked".</strong><br>The selected output is locked — by you ("Output locked") or by another operator ("Locked by other"). Unlock it with the button above the wheel. The app asks before overriding someone else's lock.</p>
+<p><strong>After sending, the button does nothing.</strong><br>The route has been sent and confirmed ("Done"). Turn either wheel to send something else.</p>
+<p><strong>How do I rename an input or an output?</strong><br>Press and hold a wheel: the top one renames the output, the bottom one the input. The name is written to the router.</p>
+<p><strong>Tapping the model plate.</strong><br>It switches between the model and the router's name set in Videohub Setup.</p>
+
+<h2>Presets and purchases</h2>
+<p><strong>How do I save and recall a preset?</strong><br>Set the routing, tap Save at the top right and name the preset. To recall it, press and hold Routing, pick the preset, then tap Routing to send it. Presets are stored on the device, separately for each router.</p>
+<p><strong>There is no Save button, or holding Routing opens nothing.</strong><br>Presets are the "Saving presets" in-app purchase. They are not available on Studio Videohub.</p>
+<p><strong>Purchases are gone after reinstalling or on a new device.</strong><br>Settings → Restore purchases, signed in with the Apple ID you bought them with.</p>
+<p><strong>Can I try it without a router?</strong><br>Yes: the list has a 16×16 Demo Videohub. Swipe to delete it; it does not come back.</p>
+</section>
+
+<footer>© 2026 VideoHub Control · <a href="./">О приложении / About</a></footer>
+</main>
+</body>
+</html>
