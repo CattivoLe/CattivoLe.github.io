@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VideoHub Control — пульт для Blackmagic Videohub</title>
-<meta name="description" content="VideoHub Control управляет матрицами Blackmagic Design Videohub в локальной сети: рутинг, блокировка выходов, пресеты и живой статус каждой матрицы. Для iPhone и iPad.">
+<title>VideoHub Control — пульт для Blackmagic Videohub и AJA KUMO</title>
+<meta name="description" content="VideoHub Control управляет видеоматрицами Blackmagic Design Videohub и AJA KUMO в локальной сети: рутинг, блокировка выходов, пресеты и живой статус каждой матрицы. Для iPhone и iPad.">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="page.css">
 <link rel="icon" href="icon.png">
@@ -21,12 +21,12 @@
   <img src="icon.png" alt="">
   <div>
     <h1>VideoHub Control</h1>
-    <p>Пульт для матриц Blackmagic Videohub.</p>
+    <p>Пульт для матриц Blackmagic Videohub и AJA KUMO.</p>
   </div>
 </div>
-<ul class="badges"><li>iPhone</li><li>iPad</li><li>локальная сеть</li><li>демо-матрица без железа</li></ul>
+<ul class="badges"><li>iPhone</li><li>iPad</li><li>Blackmagic Videohub</li><li>AJA KUMO</li><li>демо-матрица без железа</li></ul>
 
-<p class="lead">Выберите выход, выберите источник, отправьте. VideoHub Control управляет матрицами Blackmagic Design Videohub по локальной сети — из аппаратной, со сцены или из зала, с телефона в руке.</p>
+<p class="lead">Выберите выход, выберите источник, отправьте. VideoHub Control управляет матрицами Blackmagic Design Videohub и AJA KUMO по локальной сети — из аппаратной, со сцены или из зала, с телефона в руке.</p>
 
 <div class="phones">
   <img src="img/phone-list.jpg" alt="iPhone: список матриц, у каждой статус связи и текущий рутинг одного выхода" width="660" height="1434">
@@ -35,14 +35,14 @@
 </div>
 
 <h2>Список матриц</h2>
-<p>Сохранённые матрицы видно сразу: на связи ли каждая и куда сейчас скоммутирован выбранный вами выход — например, что идёт в Program. Матрицы, которые объявляют себя в сети, находятся сами. Хаб запоминается по его Unique ID, поэтому если DHCP выдал ему новый адрес, обновится сохранённая строка, а не появится дубликат.</p>
+<p>Сохранённые матрицы видно сразу: на связи ли каждая и куда сейчас скоммутирован выбранный вами выход — например, что идёт в Program. Марки различаются цветом: Blackmagic — оранжевый, AJA — сине-голубой. Videohub, которые объявляют себя в сети, находятся сами, KUMO добавляется по адресу. Хаб запоминается по его Unique ID, поэтому если DHCP выдал ему новый адрес, обновится сохранённая строка, а не появится дубликат.</p>
 
 <h2>Рутинг</h2>
 <p>Верхнее колесо — выход, нижнее — источник. Нижнее колесо само встаёт на вход, который сейчас идёт в выбранный выход, поэтому видно, что вы меняете. Команда уходит по второму тапу «Routing» — от случайного переключения в эфире; подтверждение можно выключить в настройках. Кнопка становится зелёной, когда матрица подтвердила рутинг, а если выход переключил другой оператор, колесо подтянется само.</p>
 <p>Долгое нажатие на колесо переименовывает порт. Имя записывается в саму матрицу, так что его видят все операторы и все программы.</p>
 
 <h2>Блокировка выходов и пресеты</h2>
-<p>Выход можно заблокировать, чтобы его никто не переключил. Чужая блокировка видна, и перед её снятием приложение спросит. Пресет сохраняет всю таблицу рутинга матрицы и отправляет её одной командой. Блокировка и пресеты — встроенные покупки.</p>
+<p>Выход можно заблокировать, чтобы его никто не переключил. Чужая блокировка видна, и перед её снятием приложение спросит. Пресет сохраняет всю таблицу рутинга матрицы — у Studio Videohub вместе с мониторными выходами — и отправляет её одной командой. Блокировка и пресеты — встроенные покупки.</p>
 
 <figure>
   <img src="img/ipad-side-by-side.jpg" alt="iPad: список матриц слева, экран рутинга справа" width="1280" height="960">
@@ -54,6 +54,8 @@
   <li>Демо-матрица 16×16 — посмотреть приложение без железа.</li>
   <li>Нестандартный порт пишется прямо в адресе: <code>10.0.0.2:9991</code>.</li>
   <li>Studio Videohub: мониторные выходы идут в том же колесе после обычных.</li>
+  <li>AJA KUMO 16×4, 16×16, 32×32 и 64×64 — рутинг, блокировка, имена портов и пресеты.</li>
+  <li>VoiceOver: у кнопок есть подписи, переименование и пресеты доступны действиями, а смена состояния объявляется голосом.</li>
   <li>Старые Compact и Smart Videohub тоже подключаются.</li>
   <li>Матрицей можно поделиться ссылкой — она добавится в список на другом телефоне.</li>
   <li>Журнал диагностики из настроек, если матрица ведёт себя не так, как ожидается.</li>
@@ -71,12 +73,12 @@
   <img src="icon.png" alt="">
   <div>
     <h1>VideoHub Control</h1>
-    <p>A remote for Blackmagic Videohub routers.</p>
+    <p>A remote for Blackmagic Videohub and AJA KUMO routers.</p>
   </div>
 </div>
-<ul class="badges"><li>iPhone</li><li>iPad</li><li>local network</li><li>demo router, no hardware needed</li></ul>
+<ul class="badges"><li>iPhone</li><li>iPad</li><li>Blackmagic Videohub</li><li>AJA KUMO</li><li>demo router, no hardware needed</li></ul>
 
-<p class="lead">Pick the destination, pick the source, send it. VideoHub Control drives Blackmagic Design Videohub routers over the local network — from the gallery, the stage or the floor, with the phone in your hand.</p>
+<p class="lead">Pick the destination, pick the source, send it. VideoHub Control drives Blackmagic Design Videohub and AJA KUMO routers over the local network — from the gallery, the stage or the floor, with the phone in your hand.</p>
 
 <div class="phones">
   <img src="img/phone-list.jpg" alt="iPhone: the list of routers, each with its status and the live route of one output" width="660" height="1434">
@@ -85,14 +87,14 @@
 </div>
 
 <h2>The list</h2>
-<p>Your saved routers at a glance: whether each one is online and where the output you care about is routed right now — what is on Program, say. Routers that advertise themselves on the network are found for you. A hub is remembered by its Unique ID, so when DHCP hands it a new address the saved row is updated instead of a duplicate appearing.</p>
+<p>Your saved routers at a glance: whether each one is online and where the output you care about is routed right now — what is on Program, say. The brands are told apart by colour: Blackmagic orange, AJA blue. Videohubs that advertise themselves on the network are found for you; a KUMO is added by its address. A hub is remembered by its Unique ID, so when DHCP hands it a new address the saved row is updated instead of a duplicate appearing.</p>
 
 <h2>Routing</h2>
 <p>The top wheel is the destination, the bottom one the source. The source wheel turns to whatever is on the chosen output right now, so you always see what you are about to change. The route goes out on a second tap of Routing, so nothing switches on air by accident; the confirmation can be turned off in Settings. The button turns green once the router confirms the route, and when another operator re-routes the output, the wheel follows.</p>
 <p>Press and hold a wheel to rename its port. The name is written to the router itself, so every operator and every app sees it.</p>
 
 <h2>Output locks and presets</h2>
-<p>Lock an output so nobody can re-route it. Someone else's lock is shown, and the app asks before overriding it. A preset stores the router's whole routing table and sends it back in one command. Locks and presets are in-app purchases.</p>
+<p>Lock an output so nobody can re-route it. Someone else's lock is shown, and the app asks before overriding it. A preset stores the router's whole routing table — on a Studio Videohub, the monitoring outputs too — and sends it back in one command. Locks and presets are in-app purchases.</p>
 
 <figure>
   <img src="img/ipad-side-by-side.jpg" alt="iPad: the list of routers on the left, the routing screen on the right" width="1280" height="960">
@@ -104,6 +106,8 @@
   <li>A 16×16 demo router to try the app without hardware.</li>
   <li>A non-standard port goes right in the address: <code>10.0.0.2:9991</code>.</li>
   <li>Studio Videohub: the monitoring outputs follow the regular ones on the same wheel.</li>
+  <li>AJA KUMO 16×4, 16×16, 32×32 and 64×64 — routing, locks, port names and presets.</li>
+  <li>VoiceOver: every control is labelled, renaming and presets are available as actions, and state changes are announced.</li>
   <li>Older Compact and Smart Videohub models connect too.</li>
   <li>Share a router as a link, and it is added to the list on another phone.</li>
   <li>A diagnostics log from Settings when a router does not behave as expected.</li>
@@ -116,7 +120,7 @@
 </ul>
 </section>
 
-<footer>© 2026 VideoHub Control · VideoHub Control is not affiliated with or endorsed by Blackmagic Design. Videohub is a trademark of Blackmagic Design.</footer>
+<footer>© 2026 VideoHub Control · VideoHub Control is not affiliated with or endorsed by Blackmagic Design or AJA Video Systems. Videohub is a trademark of Blackmagic Design; KUMO is a trademark of AJA Video Systems.</footer>
 </main>
 </body>
 </html>

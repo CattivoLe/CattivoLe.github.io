@@ -9,7 +9,7 @@ Support pages and privacy policies for my apps.
 | --- | --- |
 | **CoverCast** — Now Playing для винила / for vinyl. iPhone, iPad, Apple TV, Android TV | [О приложении / About](https://cattivole.github.io/covercast/) · [Поддержка / Support](https://cattivole.github.io/covercast/support.html) · [Политика / Privacy](https://cattivole.github.io/covercast/privacy.html) · [Политика Apple TV / Apple TV privacy](https://cattivole.github.io/covercast/privacy-tv.html) |
 | **Probe Lab** — карманная лаборатория цифровой безопасности / a pocket digital-security lab. iPhone | [Поддержка / Support](https://cattivole.github.io/probelab/) · [Политика / Privacy](https://cattivole.github.io/probelab/privacy.html) |
-| **VideoHub Control** — пульт для Blackmagic Videohub / a remote for Blackmagic Videohub routers. iPhone, iPad | [О приложении / About](https://cattivole.github.io/videohubcontrol/) · [Поддержка / Support](https://cattivole.github.io/videohubcontrol/support.html) · [Политика / Privacy](https://cattivole.github.io/videohubcontrol/privacy.html) |
+| **VideoHub Control** — пульт для Blackmagic Videohub и AJA KUMO / a remote for Blackmagic Videohub and AJA KUMO routers. iPhone, iPad | [О приложении / About](https://cattivole.github.io/videohubcontrol/) · [Поддержка / Support](https://cattivole.github.io/videohubcontrol/support.html) · [Политика / Privacy](https://cattivole.github.io/videohubcontrol/privacy.html) |
 
 ## Вопросы и ошибки / Questions and bugs
 

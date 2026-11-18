@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VideoHub Control — поддержка</title>
-<meta name="description" content="Поддержка VideoHub Control: подключение к Blackmagic Videohub, рутинг, блокировка выходов, пресеты, покупки и частые вопросы.">
+<meta name="description" content="Поддержка VideoHub Control: подключение к Blackmagic Videohub и AJA KUMO, рутинг, блокировка выходов, пресеты, покупки и частые вопросы.">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="page.css">
 <link rel="icon" href="icon.png">
@@ -18,7 +18,7 @@
 
 <section id="ru" lang="ru">
 <h1>Поддержка</h1>
-<p class="lead">VideoHub Control для iPhone и iPad: что делать, если матрица не подключается, кнопка не отправляет рутинг или пропали покупки.</p>
+<p class="lead">VideoHub Control для iPhone и iPad, Blackmagic Videohub и AJA KUMO: что делать, если матрица не подключается, кнопка не отправляет рутинг или пропали покупки.</p>
 
 <p>Нашли ошибку или есть вопрос — создайте обращение в <a href="https://github.com/CattivoLe/CattivoLe.github.io/issues?q=%5BVideoHub%20Control%5D">GitHub Issues</a>. Напишите модель матрицы, модель iPhone или iPad, версию iOS и что происходило. Если матрица ведёт себя странно, приложите журнал: Настройки → Send diagnostics.</p>
 <ul class="links">
@@ -43,14 +43,22 @@
 
 <h2>Пресеты и покупки</h2>
 <p><strong>Как сохранить и вызвать пресет?</strong><br>Выставьте рутинг, нажмите Save в правом верхнем углу и дайте пресету имя. Чтобы вызвать, удерживайте кнопку Routing, выберите пресет, затем отправьте его тапом по Routing. Пресеты хранятся на устройстве отдельно для каждой матрицы.</p>
-<p><strong>Нет кнопки Save или долгое нажатие ничего не открывает.</strong><br>Пресеты — встроенная покупка «Saving presets». На Studio Videohub пресеты недоступны.</p>
+<p><strong>Нет кнопки Save или долгое нажатие ничего не открывает.</strong><br>Пресеты — встроенная покупка «Saving presets».</p>
+<p><strong>Пресеты на Studio Videohub.</strong><br>Пресет хранит и мониторные выходы: они идут в колесе после обычных и отправляются вместе со всей таблицей.</p>
 <p><strong>Покупки пропали после переустановки или на новом устройстве.</strong><br>Настройки → Restore purchases, с тем же Apple ID, которым покупали.</p>
 <p><strong>Можно попробовать без матрицы?</strong><br>Да: в списке есть Demo Videohub 16×16. Его можно удалить смахиванием, обратно он не вернётся.</p>
+
+<h2>AJA KUMO</h2>
+<p><strong>Как добавить KUMO?</strong><br>Нажмите «+», выберите AJA KUMO и введите IP-адрес роутера — тот же, по которому открывается его веб-интерфейс. KUMO сам в поиске не появляется. Если веб-интерфейс работает не на порту 80, допишите порт: <code>10.0.0.5:8080</code>. В списке KUMO отмечен сине-голубым.</p>
+<p><strong>KUMO не подключается.</strong><br>Проверьте, что веб-интерфейс KUMO открывается в браузере с того же iPhone. Если в KUMO включён пароль веб-интерфейса, выключите его: с паролем приложение пока не подключается.</p>
+<p><strong>Блокировка на KUMO.</strong><br>Блокировка выхода у KUMO общая для всех панелей. Выходы, заблокированные с этого iPhone, приложение показывает как «Output locked», остальные — как «Locked by other» и перед снятием спросит.</p>
+<p><strong>Имена портов.</strong><br>У KUMO имя порта — две короткие строки, приложение показывает их через пробел. При переименовании новое имя записывается в первую строку, вторая очищается.</p>
+<p><strong>Сальво KUMO.</strong><br>Сальво, сохранённые в самом KUMO, приложение не вызывает. Вместо них используйте пресеты приложения.</p>
 </section>
 
 <section id="en" lang="en">
 <h1>Support</h1>
-<p class="lead">VideoHub Control for iPhone and iPad: what to do when a router does not connect, Routing does not send, or purchases have gone missing.</p>
+<p class="lead">VideoHub Control for iPhone and iPad, Blackmagic Videohub and AJA KUMO: what to do when a router does not connect, Routing does not send, or purchases have gone missing.</p>
 
 <p>Found a bug or have a question? Open an issue on <a href="https://github.com/CattivoLe/CattivoLe.github.io/issues?q=%5BVideoHub%20Control%5D">GitHub Issues</a>. Include the router model, your iPhone or iPad model, the iOS version and what happened. If the router misbehaves, attach the log from Settings → Send diagnostics.</p>
 <ul class="links">
@@ -75,9 +83,17 @@
 
 <h2>Presets and purchases</h2>
 <p><strong>How do I save and recall a preset?</strong><br>Set the routing, tap Save at the top right and name the preset. To recall it, press and hold Routing, pick the preset, then tap Routing to send it. Presets are stored on the device, separately for each router.</p>
-<p><strong>There is no Save button, or holding Routing opens nothing.</strong><br>Presets are the "Saving presets" in-app purchase. They are not available on Studio Videohub.</p>
+<p><strong>There is no Save button, or holding Routing opens nothing.</strong><br>Presets are the "Saving presets" in-app purchase.</p>
+<p><strong>Presets on a Studio Videohub.</strong><br>A preset keeps the monitoring outputs too: they follow the regular outputs on the wheel and are sent with the rest of the table.</p>
 <p><strong>Purchases are gone after reinstalling or on a new device.</strong><br>Settings → Restore purchases, signed in with the Apple ID you bought them with.</p>
 <p><strong>Can I try it without a router?</strong><br>Yes: the list has a 16×16 Demo Videohub. Swipe to delete it; it does not come back.</p>
+
+<h2>AJA KUMO</h2>
+<p><strong>How do I add a KUMO?</strong><br>Tap "+", choose AJA KUMO and type the router's IP address — the one its web interface opens on. A KUMO does not show up in the search. If its web interface is not on port 80, add the port: <code>10.0.0.5:8080</code>. In the list a KUMO is marked in blue.</p>
+<p><strong>The KUMO does not connect.</strong><br>Check that the KUMO's web interface opens in a browser on the same iPhone. If the KUMO has a web password, turn it off: the app cannot sign in with a password yet.</p>
+<p><strong>Locks on a KUMO.</strong><br>A KUMO lock applies to every panel. Outputs locked from this iPhone show as "Output locked", the rest as "Locked by other", and the app asks before unlocking those.</p>
+<p><strong>Port names.</strong><br>A KUMO port name is two short lines; the app shows them joined by a space. Renaming writes the new name to the first line and clears the second.</p>
+<p><strong>KUMO salvos.</strong><br>The app does not fire salvos stored in the KUMO itself. Use the app's presets instead.</p>
 </section>
 
 <footer>© 2026 VideoHub Control · <a href="./">О приложении / About</a></footer>
