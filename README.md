@@ -1,98 +1,78 @@
-# Общий сайт приложений на GitHub Pages
+# cattivole.github.io
 
-Один публичный репозиторий **`CattivoLe.github.io`** на все приложения. GitHub
-публикует репозиторий с таким именем по корневому адресу
-`https://cattivole.github.io/`, а каждое приложение — отдельная папка в нём:
+Страницы поддержки и политики конфиденциальности моих приложений.
+Support pages and privacy policies for my apps.
+
+**https://cattivole.github.io/**
+
+| Приложение / App | Страницы / Pages |
+| --- | --- |
+| **CoverCast** — Now Playing для винила / for vinyl. iPhone, iPad, Apple TV, Android TV | [О приложении / About](https://cattivole.github.io/covercast/) · [Поддержка / Support](https://cattivole.github.io/covercast/support.html) · [Политика / Privacy](https://cattivole.github.io/covercast/privacy.html) · [Политика Apple TV / Apple TV privacy](https://cattivole.github.io/covercast/privacy-tv.html) |
+| **Probe Lab** — карманная лаборатория цифровой безопасности / a pocket digital-security lab. iPhone | [Поддержка / Support](https://cattivole.github.io/probelab/) · [Политика / Privacy](https://cattivole.github.io/probelab/privacy.html) |
+
+## Вопросы и ошибки / Questions and bugs
+
+Создайте обращение в [Issues](https://github.com/CattivoLe/CattivoLe.github.io/issues/new)
+и укажите приложение в заголовке: `[CoverCast] …` или `[Probe Lab] …`.
+Напишите модель устройства, версию системы и что происходило.
+
+Open an [issue](https://github.com/CattivoLe/CattivoLe.github.io/issues/new) with
+the app's name in the title — `[CoverCast] …` or `[Probe Lab] …` — and include
+your device model, system version and what happened.
+
+---
+
+## Для себя: как устроен сайт
+
+Обычные статические страницы, без сборки. GitHub Pages публикует ветку `main`
+из корня; `.nojekyll` отключает Jekyll, файлы отдаются как есть.
 
 ```
-CattivoLe.github.io/
-├── index.html          список приложений
-├── style.css           общий стиль
-├── .nojekyll           отдавать файлы как есть
-├── probelab/
-│   ├── index.html      поддержка (Support URL)
-│   ├── privacy.html    политика конфиденциальности (Privacy Policy URL)
-│   └── icon.png
-└── covercast/
-    ├── index.html      о приложении (Marketing URL)
-    ├── support.html    поддержка (Support URL)
-    ├── privacy.html    политика конфиденциальности (Privacy Policy URL, она же для Google Play)
-    ├── privacy-tv.html политика для Apple TV — тот же текст, что в поле Apple TV Privacy Policy
-    ├── page.css        свой акцент и картинки
-    ├── icon.png
-    └── img/            уменьшенные скриншоты, делает Tools/site_images.py в репозитории CoverCast
+├── index.html            список приложений
+├── style.css             общий стиль (светлая и тёмная тема)
+├── 404.html
+├── covercast/
+│   ├── index.html        о приложении      → Marketing URL
+│   ├── support.html      поддержка         → Support URL
+│   ├── privacy.html      политика          → Privacy Policy URL (и Google Play)
+│   ├── privacy-tv.html   политика Apple TV → Apple TV Privacy Policy, тот же текст
+│   ├── page.css          свой акцент и стили картинок поверх ../style.css
+│   ├── icon.png
+│   └── img/              скриншоты; делает Tools/site_images.py в репозитории CoverCast
+└── probelab/
+    ├── index.html        поддержка         → Support URL
+    ├── privacy.html      политика          → Privacy Policy URL
+    └── icon.png
 ```
 
-Адреса CoverCast (вписаны в `fastlane/metadata/*/` репозитория CoverCast):
+Каждая страница двуязычная: секции `#ru` и `#en` на одной странице, ссылки на
+английскую версию ведут на `…#en`.
 
-- https://cattivole.github.io/covercast/
-- https://cattivole.github.io/covercast/support.html
-- https://cattivole.github.io/covercast/privacy.html
-- https://cattivole.github.io/covercast/privacy-tv.html
-- обращения — с «[CoverCast]» в заголовке.
+Адреса вписаны в самих приложениях и в `fastlane/metadata/*/` их репозиториев
+(у Probe Lab ещё в `ProbeLab/Model/AppLinks.swift`). **Не переименовывайте файлы
+и папки** — сломаются ссылки в App Store и Google Play.
 
-Адреса Probe Lab (уже вписаны в `ProbeLab/Model/AppLinks.swift` и
-`fastlane/metadata/*/`):
+Политика Apple TV повторяет текст из поля Apple TV Privacy Policy в App Store
+Connect: меняете одно — меняйте и другое, вместе с датой «Действует с…».
 
-- https://cattivole.github.io/probelab/
-- https://cattivole.github.io/probelab/privacy.html
-- обращения: https://github.com/CattivoLe/CattivoLe.github.io/issues — с
-  «[Probe Lab]» в заголовке, кнопка «Сообщить о проблеме» подставляет его сама.
+### Новое приложение
 
-Код приложений публиковать не нужно: основные репозитории остаются приватными,
-в общий попадают только страницы.
-
-## Первая публикация (5 минут)
-
-1. Войдите на github.com под аккаунтом **CattivoLe**.
-2. Создайте **публичный** репозиторий с именем ровно **`CattivoLe.github.io`**
-   (https://github.com/new, без README). Имя должно совпадать с логином, иначе
-   сайт окажется не в корне, а по адресу `cattivole.github.io/<имя>/`.
-3. Загрузите содержимое папки `site/` (кроме этого README по желанию):
-
-   ```bash
-   cd "/Users/alex/Develop/Probe Lab/site"
-   git init -b main
-   git add .
-   git commit -m "Сайт приложений: Probe Lab"
-   git remote add origin https://github.com/CattivoLe/CattivoLe.github.io.git
-   git push -u origin main
-   ```
-
-   Или в браузере: Add file → Upload files, перетащить всё содержимое `site/`
-   вместе с папкой `probelab`.
-4. **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
-   ветка **main**, папка **/(root)**, Save. У репозитория `*.github.io` это
-   обычно включено сразу.
-5. Через 1–2 минуты откройте https://cattivole.github.io/probelab/privacy.html
-   в браузере без входа в GitHub.
-6. Проверьте, что **Issues** включены: Settings → General → Features.
-7. В App Store Connect впишите адреса из `fastlane/metadata/*/` (подробно —
-   `docs/app-store-review/submission-checklist.md`).
-
-## Как добавить другое приложение
-
-1. Скопируйте папку `probelab/` под коротким именем нового приложения,
-   например `myapp/`, и замените тексты, иконку и название в заголовке.
-   Стиль подключается как `../style.css`, его копировать не нужно.
-2. Добавьте строку в таблицу в корневом `index.html`.
-3. В приложении ссылайтесь на `https://cattivole.github.io/myapp/` и
-   `.../myapp/privacy.html`, а обращения — на
+1. Скопируйте `probelab/` в папку с коротким именем, например `myapp/`;
+   замените тексты, иконку и `<title>`. Общий стиль подключается как
+   `../style.css`, свой акцент — отдельным `page.css`, как у CoverCast.
+2. Добавьте строку в таблицу в корневом `index.html` и в этот README.
+3. В приложении ссылайтесь на `https://cattivole.github.io/myapp/`,
+   `…/myapp/privacy.html`, а обращения —
    `https://github.com/CattivoLe/CattivoLe.github.io/issues/new?title=%5BMyApp%5D%20`.
-4. `git add . && git commit && git push` — страница появится через минуту.
+4. Закоммитьте и запушьте в `main` — страница появится через минуту-две.
 
-Одно ограничение: не создавайте отдельный репозиторий с Pages под тем же именем,
-что и папка (например, публичный репозиторий `probelab` с включёнными Pages) —
-он займёт адрес `cattivole.github.io/probelab/` вместо папки.
+Не создавайте отдельный репозиторий с включёнными Pages под тем же именем, что
+и папка: он займёт адрес `cattivole.github.io/<имя>/` вместо неё.
 
-## Где хранить исходники
+### Проверить локально
 
-Удобно держать живую копию прямо в клоне `CattivoLe.github.io`, а папку `site/`
-этого проекта считать исходником Probe Lab: после правок скопировать
-`site/probelab/` в клон и запушить.
+```bash
+python3 -m http.server 8000
+```
 
-## Контактный email
-
-Apple ждёт на странице поддержки способ связаться с разработчиком. Issues для
-этого подходят, но многим пользователям проще написать письмо. Если хотите,
-добавьте адрес в раздел «Поддержка» в `probelab/index.html`.
+и открыть http://localhost:8000/.
