@@ -1,0 +1,16 @@
+/* Veilix's own additions to ../style.css: its violet, and pictures. */
+:root { --accent: #6a32b8; }
+@media (prefers-color-scheme: dark) { :root { --accent: #b48cf0; } }
+.hero { display: flex; gap: 24px; align-items: center; margin: 0 0 8px; }
+.hero img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+.hero h1 { margin: 0 0 6px; }
+.hero p { margin: 0; color: var(--muted); font-size: 19px; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 18px 0 28px; padding: 0; list-style: none; }
+.badges li { margin: 0; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 999px; font-size: 14px; color: var(--muted); }
+.phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0 8px; }
+.phones img { display: block; width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--rule); }
+.phones + .muted { margin: 0 0 28px; }
+.note { margin: 24px 0; padding: 14px 16px; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--paper); }
+.note p { margin: 0; }
+.note p + p { margin-top: 8px; }
+@media (max-width: 480px) { .hero img { width: 72px; height: 72px; border-radius: 16px; } .phones { gap: 8px; } .phones img { border-radius: 12px; } }

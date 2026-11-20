@@ -9,18 +9,21 @@ Support pages and privacy policies for my apps.
 | --- | --- |
 | **CoverCast** — Now Playing для винила / for vinyl. iPhone, iPad, Apple TV, Android TV | [О приложении / About](https://cattivole.github.io/covercast/) · [Поддержка / Support](https://cattivole.github.io/covercast/support.html) · [Политика / Privacy](https://cattivole.github.io/covercast/privacy.html) · [Политика Apple TV / Apple TV privacy](https://cattivole.github.io/covercast/privacy-tv.html) |
 | **Probe Lab** — карманная лаборатория цифровой безопасности / a pocket digital-security lab. iPhone | [Поддержка / Support](https://cattivole.github.io/probelab/) · [Политика / Privacy](https://cattivole.github.io/probelab/privacy.html) |
+| **Veilix** — секреты внутри обычных фотографий / secrets inside ordinary photos. iPhone, iPad, Android ([исходный код / source](https://github.com/CattivoLe/Veilix)) | [О приложении / About](https://cattivole.github.io/veilix/) · [Поддержка / Support](https://cattivole.github.io/veilix/support.html) · [Политика / Privacy](https://cattivole.github.io/veilix/privacy.html) |
 | **VideoHub Control** — пульт для Blackmagic Videohub и AJA KUMO / a remote for Blackmagic Videohub and AJA KUMO routers. iPhone, iPad | [О приложении / About](https://cattivole.github.io/videohubcontrol/) · [Поддержка / Support](https://cattivole.github.io/videohubcontrol/support.html) · [Политика / Privacy](https://cattivole.github.io/videohubcontrol/privacy.html) |
 
 ## Вопросы и ошибки / Questions and bugs
 
 Создайте обращение в [Issues](https://github.com/CattivoLe/CattivoLe.github.io/issues/new)
 и укажите приложение в заголовке: `[CoverCast] …`, `[Probe Lab] …` или `[VideoHub Control] …`.
+Вопросы по Veilix — в [его репозитории](https://github.com/CattivoLe/Veilix/issues).
 Напишите модель устройства, версию системы и что происходило.
 
 Open an [issue](https://github.com/CattivoLe/CattivoLe.github.io/issues/new) with
 the app's name in the title — `[CoverCast] …`, `[Probe Lab] …` or
 `[VideoHub Control] …` — and include
 your device model, system version and what happened.
+Veilix questions go to [its own repository](https://github.com/CattivoLe/Veilix/issues).
 
 ---
 
@@ -45,6 +48,13 @@ your device model, system version and what happened.
 │   ├── index.html        поддержка         → Support URL
 │   ├── privacy.html      политика          → Privacy Policy URL
 │   └── icon.png
+├── veilix/
+│   ├── index.html        о приложении      → Marketing URL
+│   ├── support.html      поддержка         → Support URL
+│   ├── privacy.html      политика          → Privacy Policy URL
+│   ├── page.css          фиолетовый акцент поверх ../style.css
+│   ├── icon.png
+│   └── img/              скриншоты: iPhone из store/ репозитория iOS, Android из docs/images Veilix
 └── videohubcontrol/
     ├── index.html        о приложении      → Marketing URL
     ├── support.html      поддержка         → Support URL

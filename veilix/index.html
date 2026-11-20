@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veilix — секреты внутри обычных фотографий</title>
+<meta name="description" content="Veilix прячет зашифрованный текст и файлы в обычных фотографиях. Всё на устройстве, без аккаунтов и серверов. iPhone, iPad и Android, открытый исходный код и описанный формат.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">Veilix</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<div class="hero">
+  <img src="icon.png" alt="">
+  <div>
+    <h1>Veilix</h1>
+    <p>Секреты внутри обычных фотографий.</p>
+  </div>
+</div>
+<ul class="badges"><li>iPhone</li><li>iPad</li><li>Android</li><li>без сети</li><li>открытый исходный код</li></ul>
+
+<p class="lead">Veilix прячет текст или файл в обычной фотографии. Картинка выглядит как прежде и открывается где угодно, а прочитать скрытое может только тот, у кого есть пароль.</p>
+
+<div class="phones">
+  <img src="img/iphone-hide.jpg" alt="iPhone: фото водопада, настройки шифрования, пароль и сообщение перед внедрением" width="660" height="1435">
+  <img src="img/iphone-zip.jpg" alt="iPhone: данные внедрены, кнопки «Экспортировать» и «Отправить как ZIP»" width="660" height="1435">
+  <img src="img/iphone-share-menu.jpg" alt="iPhone: расшифровка прямо из меню «Поделиться» другого приложения" width="660" height="1435">
+</div>
+<p class="muted">Veilix на iPhone: спрятать сообщение, отправить как ZIP, прочитать из меню «Поделиться».</p>
+
+<h2>Как это работает</h2>
+<ol>
+  <li>Выберите фото из галереи или «Файлов» либо сделайте новое.</li>
+  <li>Введите сообщение или прикрепите файл и задайте пароль.</li>
+  <li>Нажмите «Внедрить текст» или «Внедрить файл» и отправьте картинку файлом или как ZIP.</li>
+</ol>
+<p>Получатель открывает картинку в Veilix, вводит пароль и читает сообщение. Картинки переходят между iPhone и Android в обе стороны.</p>
+
+<h2>Приватность</h2>
+<ul>
+  <li>Шифрование AES-256-GCM или ChaCha20-Poly1305, ключ из пароля через PBKDF2 с 600 000 раундов.</li>
+  <li>В картинке с паролем нет метки, заголовка и длины, которые можно прочитать. Без пароля даже Veilix не отличит её от обычного фото.</li>
+  <li>Биты разбросаны по пикселям, которые выбирает пароль, и пиксели меняются на ±1, а не перезаписываются.</li>
+  <li>Всё происходит на устройстве: без аккаунта, серверов и аналитики. У Android-версии вообще нет доступа в интернет.</li>
+  <li>Экспортированная картинка не несёт метаданных исходного фото, например геопозиции, и получает нейтральное имя вроде <code>IMG_1234.png</code>.</li>
+  <li>Экран скрыт в переключателе приложений, а пароли и сообщения стираются после минуты в фоне.</li>
+</ul>
+
+<h2>Для мессенджеров</h2>
+<p>Мессенджеры пережимают фото, и это уничтожает скрытые данные. Кнопка «Отправить как ZIP» передаёт картинку без изменений, а Veilix открывает архив сразу, распаковывать ничего не нужно. Если картинку уже сжали по дороге, Veilix скажет об этом.</p>
+
+<h2>Android</h2>
+<p>Android-версия — открытый проект на GitHub под лицензией GPL-3.0. Подписанный APK лежит в Releases, нужен Android 10 или новее.</p>
+<div class="phones">
+  <img src="img/android-photo.jpg" alt="Android: фото кота, Veilix нашёл в нём скрытые данные" width="450" height="1000">
+  <img src="img/android-hide.jpg" alt="Android: пароль, сообщение и кнопка «Внедрить текст»" width="450" height="1000">
+  <img src="img/android-read.jpg" alt="Android: расшифрованное сообщение" width="450" height="1000">
+</div>
+<p class="muted">Veilix на Android: открыть фото, спрятать сообщение, прочитать его.</p>
+
+<h2>Открытый формат</h2>
+<p>Формат описан побайтно, с тестовыми картинками для проверки. По описанию можно написать совместимую программу и проверить, что Veilix делает именно то, что обещает.</p>
+
+<div class="note">
+  <p><strong>Восстановить пароль нельзя.</strong> Если он потерян, сообщение тоже потеряно.</p>
+  <p>Пароль защищает содержимое. Специальный статистический анализ всё же может показать, что картинка изменена, особенно если данных много, поэтому прячьте не больше, чем нужно.</p>
+</div>
+
+<ul class="links">
+  <li><a href="https://apps.apple.com/app/id6770262714">App Store</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix/releases/latest">Android APK</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix">Исходный код</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix/blob/main/docs/FORMAT.md">Формат</a></li>
+  <li><a href="support.html">Поддержка</a></li>
+  <li><a href="privacy.html">Политика конфиденциальности</a></li>
+</ul>
+</section>
+
+<section id="en" lang="en">
+<div class="hero">
+  <img src="icon.png" alt="">
+  <div>
+    <h1>Veilix</h1>
+    <p>Secrets inside ordinary photos.</p>
+  </div>
+</div>
+<ul class="badges"><li>iPhone</li><li>iPad</li><li>Android</li><li>offline</li><li>open source</li></ul>
+
+<p class="lead">Veilix hides text or a file inside an ordinary photo. The picture looks the same and opens anywhere, and only someone with the password can read what's inside.</p>
+
+<div class="phones">
+  <img src="img/iphone-hide.jpg" alt="iPhone: a waterfall photo, encryption settings, a password and a message ready to embed" width="660" height="1435">
+  <img src="img/iphone-zip.jpg" alt="iPhone: data embedded, with Export image and Share as ZIP buttons" width="660" height="1435">
+  <img src="img/iphone-share-menu.jpg" alt="iPhone: decrypting right from another app's Share menu" width="660" height="1435">
+</div>
+<p class="muted">Veilix on iPhone: hide a message, send it as a ZIP, read it from the Share menu.</p>
+
+<h2>How it works</h2>
+<ol>
+  <li>Pick a photo from your library or Files, or take a new one.</li>
+  <li>Type a message or attach a file, then set a password.</li>
+  <li>Tap Embed, then send the image as a file or a ZIP.</li>
+</ol>
+<p>The recipient opens it in Veilix, enters the password and reads the message. Images move between iPhone and Android in both directions.</p>
+
+<h2>Privacy</h2>
+<ul>
+  <li>AES-256-GCM or ChaCha20-Poly1305 encryption, with the key derived from the password by PBKDF2 with 600,000 rounds.</li>
+  <li>A password-protected image has no readable marker, header or length. Without the password, even Veilix can't tell it from an ordinary photo.</li>
+  <li>The bits are spread over pixels chosen by the password, and pixels change by ±1 instead of being overwritten.</li>
+  <li>Everything happens on your device, with no account, no servers and no analytics. The Android version doesn't even have internet access.</li>
+  <li>Exported images don't carry the original photo's metadata, such as location, and get neutral names like <code>IMG_1234.png</code>.</li>
+  <li>The screen is hidden in the app switcher, and passwords and messages are cleared after a minute in the background.</li>
+</ul>
+
+<h2>Made for messengers</h2>
+<p>Messengers recompress photos, and that destroys hidden data. Share as ZIP sends the image untouched, and Veilix opens the ZIP directly, with nothing to unpack. If an image was already compressed on the way, Veilix tells you.</p>
+
+<h2>Android</h2>
+<p>The Android version is an open-source project on GitHub under GPL-3.0. A signed APK is in Releases; it needs Android 10 or newer.</p>
+<div class="phones">
+  <img src="img/android-photo.jpg" alt="Android: a cat photo in which Veilix found hidden data" width="450" height="1000">
+  <img src="img/android-hide.jpg" alt="Android: password, message and the Embed text button" width="450" height="1000">
+  <img src="img/android-read.jpg" alt="Android: the decrypted message" width="450" height="1000">
+</div>
+<p class="muted">Veilix on Android: open a photo, hide a message, read it back.</p>
+
+<h2>An open format</h2>
+<p>The format is documented byte by byte, with test images to check against. You can write a compatible program from the description and verify that Veilix does what it says.</p>
+
+<div class="note">
+  <p><strong>There is no password recovery.</strong> If the password is lost, the message is lost too.</p>
+  <p>The password protects the contents. Specialized statistical analysis may still reveal that an image was altered, especially when it holds a lot of data, so hide no more than you need.</p>
+</div>
+
+<ul class="links">
+  <li><a href="https://apps.apple.com/app/id6770262714">App Store</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix/releases/latest">Android APK</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix">Source code</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix/blob/main/docs/FORMAT.md">Format</a></li>
+  <li><a href="support.html#en">Support</a></li>
+  <li><a href="privacy.html#en">Privacy Policy</a></li>
+</ul>
+</section>
+
+<footer>© 2026 Veilix</footer>
+</main>
+</body>
+</html>

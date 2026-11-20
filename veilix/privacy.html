@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veilix — политика конфиденциальности</title>
+<meta name="description" content="Veilix не собирает данные и не выходит в сеть: что приложение хранит на устройстве, какие разрешения использует и что уходит с устройства только по вашей команде.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">Veilix</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности</h1>
+<p class="lead">Коротко: Veilix не собирает данные о вас и не выходит в интернет. Сообщения, файлы и пароли обрабатываются только на вашем устройстве и не покидают его, пока вы сами их не отправите.</p>
+<p class="muted">Действует с 20 ноября 2026 года. Относится к приложению Veilix (в App Store — Veilix Secure) для iPhone и iPad, включая его расширение для меню «Поделиться», и к Veilix для Android.</p>
+
+<h2>Что мы не делаем</h2>
+<ul>
+  <li>Не собираем и не храним никаких данных: у Veilix нет серверов.</li>
+  <li>Нет учётных записей, аналитики, рекламы, отчётов о сбоях и отслеживания между приложениями и сайтами.</li>
+  <li>Ничего не продаём и не передаём третьим лицам.</li>
+</ul>
+
+<h2>Сеть</h2>
+<p>Veilix не соединяется с интернетом. iOS-версия не делает сетевых запросов, а у Android-версии нет разрешения на доступ к сети, поэтому система её туда не пустит. Код Android-версии открыт: это можно <a href="https://github.com/CattivoLe/Veilix">проверить</a>.</p>
+
+<h2>Сообщения, файлы и пароли</h2>
+<p>Текст, который вы прячете, прикреплённые файлы, пароли и расшифрованные сообщения хранятся только в памяти, пока приложение открыто. На диск они не записываются. Если Veilix пробыл в фоне больше минуты, всё это стирается. В переключателе приложений экран Veilix скрыт.</p>
+
+<h2>Что хранится на устройстве</h2>
+<ul>
+  <li><strong>Настройки:</strong> размер картинки, показывать ли напоминание «Отправляйте как файл», пройдено ли знакомство с приложением (на iPhone и iPad).</li>
+  <li><strong>Счётчик неверных паролей:</strong> сколько было ошибок, когда была последняя и до какого времени действует пауза. Чтобы счётчик относился к одной картинке, вместе с ним хранится её соль — 16 случайных байт из картинки. Ни картинка, ни пароль не сохраняются. Счётчик забывается через час без ошибок.</li>
+  <li><strong>Временные файлы:</strong> готовая картинка или ZIP лежат во временной папке приложения, пока вы их отправляете, и удаляются после этого или при следующем запуске. На Android снимок с камеры тоже попадает во временную папку приложения, которую система очищает сама.</li>
+</ul>
+<p>На Android данные приложения исключены из облачного бэкапа и переноса на новое устройство. На iPhone и iPad настройки и счётчик попадают в резервную копию устройства, как настройки любого приложения. Сообщений и паролей среди них нет. Всё перечисленное удаляется вместе с приложением.</p>
+
+<h2>Фотографии и файлы</h2>
+<p>Veilix видит только те фото и файлы, которые вы выбрали сами в системном окне выбора. Доступа ко всей галерее приложение не просит. Готовая картинка сохраняется туда, куда вы укажете: на iPhone — через меню «Поделиться» или в «Файлы», на Android — в папку «Загрузки/Veilix».</p>
+<p>Готовая картинка собирается заново из пикселей, поэтому в неё не переходят метаданные исходного фото: геопозиция, модель камеры, дата съёмки. Она получает нейтральное имя вроде <code>IMG_1234.png</code>.</p>
+
+<h2>Разрешения</h2>
+<table>
+  <tr><th>Разрешение</th><th>Зачем</th></tr>
+  <tr><td>Камера</td><td>Сделать снимок, в который вы спрячете сообщение. Запрашивается, только когда вы выбираете «Сделать снимок».</td></tr>
+</table>
+<p>Других разрешений Veilix не запрашивает: ни геопозиции, ни контактов, ни микрофона, ни сети.</p>
+
+<h2>Буфер обмена</h2>
+<p>Скопированные пароли и сообщения остаются на этом устройстве и удаляются из буфера через минуту. На iPhone и iPad они не передаются на другие устройства через универсальный буфер обмена, на Android помечаются как секретные и не показываются в предпросмотре.</p>
+
+<h2>Что уходит с устройства — только по вашей команде</h2>
+<ul>
+  <li><strong>Картинка или ZIP</strong>, которые вы экспортируете или отправляете через меню «Поделиться». Куда они уйдут, решаете вы.</li>
+  <li><strong>Извлечённый файл</strong>, который вы сохраняете.</li>
+  <li><strong>Текст</strong>, который вы копируете.</li>
+</ul>
+
+<h2>Покупка и загрузка</h2>
+<p>Veilix для iPhone и iPad покупается в App Store. Оплату обрабатывает Apple, приложение платёжных данных не видит, встроенных покупок в нём нет. Android-версия бесплатна и скачивается с GitHub. Во время загрузки действуют правила Apple и GitHub, к самому приложению это не относится.</p>
+
+<h2>Дети</h2>
+<p>Приложение не предназначено специально для детей и не собирает данные ни о ком, включая детей.</p>
+
+<h2>Изменения</h2>
+<p>Если политика изменится, новая версия появится на этой странице с новой датой.</p>
+
+<h2>Связь</h2>
+<p>Вопросы о приватности можно задать на <a href="support.html">странице поддержки</a>.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="lead">In short: Veilix collects no data about you and doesn't go online. Messages, files and passwords are processed only on your device and don't leave it unless you send them yourself.</p>
+<p class="muted">Effective November 20, 2026. Covers the Veilix app (Veilix Secure on the App Store) for iPhone and iPad, including its Share extension, and Veilix for Android.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>We collect and store no data: Veilix has no servers.</li>
+  <li>No accounts, analytics, advertising, crash reporting, or tracking across apps and websites.</li>
+  <li>Nothing is sold or shared with third parties.</li>
+</ul>
+
+<h2>Network</h2>
+<p>Veilix doesn't connect to the internet. The iOS version makes no network requests, and the Android version has no network permission, so the system won't let it online. The Android code is open, so you can <a href="https://github.com/CattivoLe/Veilix">check this</a>.</p>
+
+<h2>Messages, files and passwords</h2>
+<p>The text you hide, attached files, passwords and decrypted messages are kept only in memory while the app is open. They are never written to disk. If Veilix stays in the background for more than a minute, all of it is cleared. Veilix's screen is hidden in the app switcher.</p>
+
+<h2>What stays on the device</h2>
+<ul>
+  <li><strong>Settings:</strong> the image size, whether to show the "Send as a file" reminder, and whether you've finished the app tour (iPhone and iPad).</li>
+  <li><strong>The wrong-password counter:</strong> how many mistakes there were, when the last one was, and until when the pause lasts. So that the counter belongs to one image, it is stored with that image's salt — 16 random bytes taken from the image. Neither the image nor the password is saved. The counter is forgotten after an hour without errors.</li>
+  <li><strong>Temporary files:</strong> a finished image or ZIP sits in the app's temporary folder while you send it, and is deleted afterwards or on the next launch. On Android a camera shot also goes to the app's temporary folder, which the system clears on its own.</li>
+</ul>
+<p>On Android, app data is excluded from cloud backup and device-to-device transfer. On iPhone and iPad, the settings and the counter are part of the device backup, like any app's settings. They contain no messages or passwords. Deleting the app deletes all of the above.</p>
+
+<h2>Photos and files</h2>
+<p>Veilix sees only the photos and files you pick yourself in the system picker. The app doesn't ask for access to your whole library. A finished image is saved where you choose: on iPhone through the Share menu or to Files, on Android to Downloads/Veilix.</p>
+<p>A finished image is rebuilt from its pixels, so the original photo's metadata — location, camera model, date taken — doesn't carry over. It gets a neutral name like <code>IMG_1234.png</code>.</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Camera</td><td>Take a photo to hide your message in. Asked for only when you choose Take a photo.</td></tr>
+</table>
+<p>Veilix asks for no other permissions: no location, contacts, microphone or network.</p>
+
+<h2>Clipboard</h2>
+<p>Copied passwords and messages stay on this device and are removed from the clipboard after a minute. On iPhone and iPad they aren't passed to your other devices through Universal Clipboard; on Android they are marked as sensitive and hidden from the clipboard preview.</p>
+
+<h2>What leaves the device — only when you say so</h2>
+<ul>
+  <li><strong>The image or ZIP</strong> you export or send through the Share menu. Where it goes is up to you.</li>
+  <li><strong>An extracted file</strong> you save.</li>
+  <li><strong>Text</strong> you copy.</li>
+</ul>
+
+<h2>Purchase and download</h2>
+<p>Veilix for iPhone and iPad is bought on the App Store. Apple handles the payment; the app never sees payment details and has no in-app purchases. The Android version is free and downloaded from GitHub. Apple's and GitHub's own terms apply to the download, not to the app itself.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no data about anyone, children included.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will appear on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions are welcome on the <a href="support.html#en">support page</a>.</p>
+</section>
+
+<footer>Veilix · <a href="./">О приложении / About</a> · <a href="support.html">Поддержка / Support</a></footer>
+</main>
+</body>
+</html>

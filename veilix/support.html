@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veilix — поддержка</title>
+<meta name="description" content="Поддержка Veilix: как отправить картинку, чтобы сообщение дошло, почему не находятся данные, неверный пароль, совместимость iPhone и Android, установка APK.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">Veilix</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Поддержка</h1>
+<p class="lead">Veilix для iPhone, iPad и Android: как отправить картинку, чтобы сообщение дошло целым, и что делать, если оно не открывается.</p>
+
+<p>Нашли ошибку или есть вопрос — создайте обращение в <a href="https://github.com/CattivoLe/Veilix/issues">GitHub Issues</a> и укажите в заголовке платформу: <code>[iOS] …</code> или <code>[Android] …</code>. Напишите модель устройства, версию системы и Veilix и что происходило. <strong>Не прикладывайте картинки с настоящими секретами и не пишите пароли.</strong></p>
+<ul class="links">
+  <li><a href="https://github.com/CattivoLe/Veilix/issues/new?title=%5BiOS%5D%20">Проблема на iPhone или iPad</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix/issues/new?title=%5BAndroid%5D%20">Проблема на Android</a></li>
+  <li><a href="privacy.html">Политика конфиденциальности</a></li>
+  <li><a href="./">О приложении</a></li>
+</ul>
+<p class="muted">Уязвимость в шифровании или формате? Сообщите о ней <a href="https://github.com/CattivoLe/Veilix/security/advisories/new">приватно</a>, а не в открытом обращении.</p>
+
+<h2>Отправка</h2>
+<p><strong>Как отправить картинку, чтобы сообщение дошло?</strong><br>Файлом: почтой, через облако, AirDrop или «Файлы». В мессенджер — кнопкой «Отправить как ZIP»: архив доходит без изменений, и Veilix открывает его сразу. В Telegram можно также отправить картинку «как файл».</p>
+<p><strong>Почему не отправить просто как фото?</strong><br>Мессенджеры и соцсети пережимают фото в JPEG или уменьшают их, и скрытые данные при этом пропадают. Вернуть их нельзя — нужно попросить отправить картинку заново, файлом или ZIP.</p>
+<p><strong>Veilix говорит, что картинку сжали и сообщения в ней быть не может.</strong><br>Картинка пришла в JPEG или HEIC, то есть её пережали по дороге. Попросите отправителя прислать оригинал файлом или ZIP. Спрятать в такую картинку своё сообщение можно: результат всё равно сохраняется в PNG.</p>
+<p><strong>Можно спрятать файл, а не текст?</strong><br>Да, любой файл: «Прикрепить файл». Сколько поместится, показывает индикатор под сообщением. Больше места даёт настройка «Размер картинки» и сжатие.</p>
+
+<h2>Чтение</h2>
+<p><strong>Открыл картинку, а Veilix не пишет «Обнаружены скрытые данные».</strong><br>Так и задумано: в картинке с паролем нет метки, по которой её можно узнать. Введите пароль и нажмите «Расшифровать». «Обнаружены скрытые данные» показывается только для картинок без пароля.</p>
+<p><strong>«Неверный пароль или данные повреждены».</strong><br>Проверьте раскладку, регистр и пробелы: кнопкой с глазом пароль можно показать. Если пароль точно верный, картинку, скорее всего, изменили по дороге — попросите прислать её файлом или ZIP.</p>
+<p><strong>«Слишком много попыток».</strong><br>После нескольких неверных паролей Veilix делает паузу, и с каждой ошибкой она растёт. Счётчик относится к одной картинке и забывается через час без ошибок. Перезапуск приложения паузу не снимает.</p>
+<p><strong>Забыл пароль.</strong><br>Восстановить его нельзя ни нам, ни кому-то ещё: ключ получается только из пароля и нигде не хранится. Без пароля сообщение потеряно.</p>
+<p><strong>Картинка из старой версии.</strong><br>Картинки, сделанные в Veilix 1.0, открываются в новых версиях как раньше. Картинки с паролем из Veilix 1.1 открываются только в 1.1 и новее — попросите получателя обновиться.</p>
+
+<h2>iPhone и Android</h2>
+<p><strong>Картинки переходят между платформами?</strong><br>Да, в обе стороны. Одно исключение: на Android пока нельзя распаковать сжатие LZFSE и LZMA, которые есть в iOS-версии. Если отправляете на Android, выберите в настройках сжатие «Zlib (Deflate)» или «Без сжатия».</p>
+<p><strong>iPhone: как открыть картинку из другого приложения?</strong><br>Нажмите «Поделиться» в «Фото», «Файлах» или мессенджере и выберите Veilix — сообщение читается прямо там. Если Veilix нет в списке, пролистайте ряд приложений до конца, нажмите «Ещё» и включите Veilix.</p>
+<p><strong>Android: как открыть картинку из другого приложения?</strong><br>«Поделиться» → Veilix или «Открыть с помощью» → Veilix в галерее и файловом менеджере. ZIP открывается так же.</p>
+<p><strong>Android: где сохранённая картинка?</strong><br>В «Загрузках», в папке <code>Veilix</code>.</p>
+
+<h2>Установка на Android</h2>
+<p><strong>Где взять Veilix для Android?</strong><br>Подписанный APK лежит в <a href="https://github.com/CattivoLe/Veilix/releases/latest">GitHub Releases</a>, нужен Android 10 или новее. При установке Android попросит разрешить установку из браузера или файлового менеджера — это нормально для приложений не из Google Play.</p>
+<p><strong>Как проверить, что APK настоящий?</strong><br>Отпечаток сертификата подписи указан в <a href="https://github.com/CattivoLe/Veilix#download">README</a> и в описании каждого релиза. Все релизы подписаны одним и тем же ключом, поэтому обновление встаёт поверх старой версии.</p>
+<p><strong>Как получать обновления?</strong><br>Добавьте <code>github.com/CattivoLe/Veilix</code> в <a href="https://github.com/ImranR98/Obtainium">Obtainium</a> — он сам проверяет новые релизы. Или подпишитесь на релизы в GitHub: Watch → Custom → Releases.</p>
+
+<h2>Безопасность</h2>
+<p><strong>Можно ли понять, что в картинке что-то спрятано?</strong><br>Прочитать сообщение без пароля нельзя, и простого признака, по которому картинку можно узнать, нет. Но специальный статистический анализ может заметить, что картинку меняли, особенно если данных много. Чем меньше сообщение и больше фото, тем труднее это заметить. Не используйте фото, которое уже где-то опубликовано: сравнение с оригиналом покажет разницу.</p>
+<p><strong>Насколько надёжен пароль?</strong><br>Пароль — единственная защита. Любой, у кого есть картинка, может перебирать пароли на своём компьютере, а пауза после ошибок действует только внутри Veilix. Используйте генератор паролей (кнопка «Создать пароль») или длинную фразу из нескольких случайных слов.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Support</h1>
+<p class="lead">Veilix for iPhone, iPad and Android: how to send an image so the message arrives intact, and what to do when it won't open.</p>
+
+<p>Found a bug or have a question? Open an issue on <a href="https://github.com/CattivoLe/Veilix/issues">GitHub Issues</a> with the platform in the title: <code>[iOS] …</code> or <code>[Android] …</code>. Include your device model, the system and Veilix versions and what happened. <strong>Don't attach images with real secrets, and don't post passwords.</strong></p>
+<ul class="links">
+  <li><a href="https://github.com/CattivoLe/Veilix/issues/new?title=%5BiOS%5D%20">Problem on iPhone or iPad</a></li>
+  <li><a href="https://github.com/CattivoLe/Veilix/issues/new?title=%5BAndroid%5D%20">Problem on Android</a></li>
+  <li><a href="privacy.html#en">Privacy Policy</a></li>
+  <li><a href="./#en">About the app</a></li>
+</ul>
+<p class="muted">Found a weakness in the encryption or the format? Report it <a href="https://github.com/CattivoLe/Veilix/security/advisories/new">privately</a> instead of in a public issue.</p>
+
+<h2>Sending</h2>
+<p><strong>How do I send an image so the message survives?</strong><br>As a file: by email, through cloud storage, AirDrop or Files. For a messenger, use Share as ZIP: the archive arrives unchanged, and Veilix opens it directly. In Telegram you can also send the image "as a file".</p>
+<p><strong>Why not just send it as a photo?</strong><br>Messengers and social networks recompress photos to JPEG or shrink them, and the hidden data is lost. It can't be brought back — ask for the image again, as a file or a ZIP.</p>
+<p><strong>Veilix says the image was compressed and can't hold a message.</strong><br>The image arrived as JPEG or HEIC, so it was recompressed on the way. Ask the sender for the original as a file or a ZIP. You can still hide your own message in such an image: the result is always saved as PNG.</p>
+<p><strong>Can I hide a file instead of text?</strong><br>Yes, any file: Attach file. The indicator under the message shows how much fits. The Image size setting and compression give you more room.</p>
+
+<h2>Reading</h2>
+<p><strong>I opened the image and Veilix doesn't say "Hidden data detected".</strong><br>That's by design: a password-protected image has no marker to recognise it by. Enter the password and tap Decrypt. "Hidden data detected" appears only for images without a password.</p>
+<p><strong>"Wrong password or data is corrupted".</strong><br>Check the keyboard layout, capitals and spaces: the eye button shows the password. If the password is right, the image was most likely changed on the way — ask for it as a file or a ZIP.</p>
+<p><strong>"Too many attempts".</strong><br>After a few wrong passwords Veilix pauses, and the pause grows with each mistake. The counter belongs to one image and is forgotten after an hour without errors. Restarting the app doesn't lift the pause.</p>
+<p><strong>I forgot the password.</strong><br>Nobody can recover it, us included: the key comes only from the password and isn't stored anywhere. Without the password the message is lost.</p>
+<p><strong>An image from an older version.</strong><br>Images made with Veilix 1.0 open in newer versions as before. Password-protected images from Veilix 1.1 open only in 1.1 or later, so ask the recipient to update.</p>
+
+<h2>iPhone and Android</h2>
+<p><strong>Do images move between platforms?</strong><br>Yes, both ways. One exception: Android can't yet unpack the LZFSE and LZMA compression offered by the iOS version. When sending to Android, choose "Zlib (Deflate)" or "No compression" in the settings.</p>
+<p><strong>iPhone: how do I open an image from another app?</strong><br>Tap Share in Photos, Files or a messenger and choose Veilix — you read the message right there. If Veilix isn't in the list, scroll the row of apps to the end, tap More and turn Veilix on.</p>
+<p><strong>Android: how do I open an image from another app?</strong><br>Share → Veilix, or Open with → Veilix in your gallery or file manager. A ZIP opens the same way.</p>
+<p><strong>Android: where is the saved image?</strong><br>In Downloads, in the <code>Veilix</code> folder.</p>
+
+<h2>Installing on Android</h2>
+<p><strong>Where do I get Veilix for Android?</strong><br>A signed APK is in <a href="https://github.com/CattivoLe/Veilix/releases/latest">GitHub Releases</a>; it needs Android 10 or newer. Android will ask you to allow installs from your browser or file manager — that's normal for apps from outside Google Play.</p>
+<p><strong>How do I check the APK is genuine?</strong><br>The signing certificate fingerprint is in the <a href="https://github.com/CattivoLe/Veilix#download">README</a> and in every release's notes. All releases are signed with the same key, so an update installs over the previous version.</p>
+<p><strong>How do I get updates?</strong><br>Add <code>github.com/CattivoLe/Veilix</code> to <a href="https://github.com/ImranR98/Obtainium">Obtainium</a>, which checks for new releases for you. Or watch the repository's releases on GitHub: Watch → Custom → Releases.</p>
+
+<h2>Security</h2>
+<p><strong>Can anyone tell an image holds something?</strong><br>The message can't be read without the password, and there's no simple sign to recognise the image by. But specialized statistical analysis may notice that the image was altered, especially when it holds a lot of data. The smaller the message and the larger the photo, the harder it is to spot. Don't use a photo that's already published somewhere: comparing it with the original shows the difference.</p>
+<p><strong>How strong does the password need to be?</strong><br>The password is the only protection. Anyone with the image can try passwords on their own computer, and the pause after mistakes applies only inside Veilix. Use the password generator (the Generate password button) or a long phrase of several random words.</p>
+</section>
+
+<footer>© 2026 Veilix · <a href="./">О приложении / About</a></footer>
+</main>
+</body>
+</html>
