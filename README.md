@@ -32,6 +32,13 @@ Veilix questions go to [its own repository](https://github.com/CattivoLe/Veilix/
 Обычные статические страницы, без сборки. GitHub Pages публикует ветку `main`
 из корня; `.nojekyll` отключает Jekyll, файлы отдаются как есть.
 
+**Одно место для всех страниц.** Локальная копия этого репозитория одна —
+`~/Develop/PrivacyPolicies`, рядом с проектами приложений. Внутрь проектов сайт
+не клонируется: они ссылаются на него как на `../PrivacyPolicies`
+(`Tools/site_images.py` CoverCast пишет картинки в `../PrivacyPolicies/covercast/img/`).
+Все правки страниц, коммиты и `git push` — отсюда. Коммиты — с личного адреса:
+`git config user.email 42239507+CattivoLe@users.noreply.github.com`.
+
 ```
 ├── index.html            список приложений
 ├── style.css             общий стиль (светлая и тёмная тема)
@@ -43,7 +50,7 @@ Veilix questions go to [its own repository](https://github.com/CattivoLe/Veilix/
 │   ├── privacy-tv.html   политика Apple TV → Apple TV Privacy Policy, тот же текст
 │   ├── page.css          свой акцент и стили картинок поверх ../style.css
 │   ├── icon.png
-│   └── img/              скриншоты; делает Tools/site_images.py в репозитории CoverCast
+│   └── img/              скриншоты; делает Tools/site_images.py в репозитории CoverCast (пишет сюда)
 ├── probelab/
 │   ├── index.html        поддержка         → Support URL
 │   ├── privacy.html      политика          → Privacy Policy URL
