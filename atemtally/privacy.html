@@ -29,13 +29,14 @@
 </ul>
 
 <h2>Что хранится на устройстве</h2>
-<p>Адреса микшеров, к которым вы подключались, выбранный вход и настройки оповещений. Эти данные не покидают устройство и удаляются вместе с приложением.</p>
+<p>Адреса микшеров, к которым вы подключались, выбранный вход, ваше имя, если вы его указали, случайный идентификатор этой установки и настройки. Всё это удаляется вместе с приложением. Что из этого получает телефон режиссёра, пока сигналы включены, описано ниже; больше эти данные никуда не уходят.</p>
 
 <h2>Сеть</h2>
 <p>Приложение ищет микшеры в локальной сети по Bonjour <code>_blackmagic._tcp</code> и подключается к выбранному по протоколу Blackmagic на порт 9910. Пока сигналы включены, оно также подключается к телефону с ATEM Control, который объявляет в той же сети службу <code>_atemmsg._tcp</code>. В интернет приложение не обращается.</p>
 
 <h2>Сигналы от режиссёра</h2>
-<p>Сигнал приходит прямо с телефона режиссёра, мимо микшера и мимо каких-либо серверов. Он показывается на экране и забывается: текст не сохраняется и никуда не пересылается. Касание карточки отправляет обратно только отметку «прочитано». Приём сигналов выключается в настройках, и тогда приложение к телефону режиссёра не подключается вовсе.</p>
+<p>Сигнал приходит прямо с телефона режиссёра, мимо микшера и мимо каких-либо серверов. Текст показывается на этом телефоне и на Apple Watch. Неподтверждённые сигналы, не больше пяти последних, остаются в памяти приложения, пока вы их не подтвердите, не выключите сигналы или не закроете приложение. В хранилище они не записываются и больше никуда не передаются.</p>
+<p>Пока сигналы включены, каждый телефон с ATEM Control, который приложение нашло в вашей локальной сети, получает указанное имя (или имя устройства, если поле пустое), выбранный вход, случайный идентификатор этой установки и отметки о доставке и прочтении сигналов. Приём сигналов выключается в настройках, и тогда приложение к телефону режиссёра не подключается вовсе и ничего из этого не отправляет.</p>
 
 <h2>Apple Watch</h2>
 <p>Часы получают цвет эфира и текст сигнала с вашего же iPhone по WatchConnectivity. Дальше этой пары устройств данные не уходят.</p>
@@ -69,13 +70,14 @@
 </ul>
 
 <h2>What stays on the device</h2>
-<p>The addresses of the switchers you connected to, the input you picked and your alert settings. None of it leaves the device, and deleting the app deletes it.</p>
+<p>The addresses of the switchers you connected to, the input you picked, your name if you enter one, a random identifier of this installation and your settings. Deleting the app deletes all of it. What the operator's phone receives while cues are on is described below; none of it goes anywhere else.</p>
 
 <h2>Network</h2>
 <p>The app looks for switchers on the local network over Bonjour <code>_blackmagic._tcp</code> and connects to the one you choose over Blackmagic's protocol on UDP port 9910. While cues are on, it also connects to the phone running ATEM Control, which publishes <code>_atemmsg._tcp</code> on that same network. The app does not contact the internet.</p>
 
 <h2>Cues from the gallery</h2>
-<p>A cue comes straight from the operator's phone, not through the switcher and not through any server. It is shown on screen and then dropped: the text is not stored and is forwarded nowhere. Tapping the card sends back a read receipt and nothing else. Turn cues off in settings and the app does not connect to the operator's phone at all.</p>
+<p>A cue comes straight from the operator's phone, not through the switcher and not through any server. The text is shown on this phone and your Apple Watch. A cue you did not confirm stays in the app's memory, up to the last five, until you confirm it, turn cues off or close the app. Cues are never saved to storage or forwarded anywhere else.</p>
+<p>While cues are on, every phone running ATEM Control that the app finds on your local network receives the name you entered (or the device name if you left it empty), the input you picked, a random identifier of this installation, and whether a cue was delivered and read. Turn cues off in settings and the app does not connect to the operator's phone at all and sends none of this.</p>
 
 <h2>Apple Watch</h2>
 <p>The watch receives the tally colour and the cue text from your own iPhone over WatchConnectivity. Nothing travels beyond that pair of devices.</p>

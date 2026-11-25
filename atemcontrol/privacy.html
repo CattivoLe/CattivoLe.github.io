@@ -35,7 +35,7 @@
 <p>Приложение соединяется с микшером ATEM по адресу, который вы ввели, в вашей локальной сети — по протоколу Blackmagic на порт 9910. Для сообщений команде оно объявляет в той же сети службу Bonjour <code>_atemmsg._tcp</code>, к которой подключаются телефоны с ATEM Tally. В интернет приложение не обращается вовсе.</p>
 
 <h2>Сообщения команде</h2>
-<p>Сигнал набираете вы, и он уходит напрямую тем телефонам, которым адресован, — мимо микшера и мимо каких-либо серверов. На телефоне оператора сигнал показывается и забывается: текст не сохраняется ни там, ни здесь и никуда не пересылается. На пульте остаётся только отметка о последних отправленных сигналах, пока приложение открыто. Оператор может выключить приём в настройках ATEM Tally.</p>
+<p>Сигнал набираете вы, и он уходит напрямую тем телефонам, которым адресован, — мимо микшера и мимо каких-либо серверов. Текст показывается на телефоне оператора и его Apple Watch; неподтверждённые сигналы, не больше пяти последних, остаются в памяти ATEM Tally, пока оператор их не подтвердит, не выключит сигналы или не закроет приложение. На пульте последние отправленные сигналы остаются в памяти, пока приложение открыто. Ни одно из приложений не записывает текст в хранилище и больше никуда его не передаёт. Оператор может выключить приём в настройках ATEM Tally.</p>
 
 <h2>Разрешения</h2>
 <table>
@@ -73,7 +73,7 @@
 <p>The app connects to the ATEM switcher at the address you enter, on your local network, over Blackmagic's protocol on UDP port 9910. For crew messages it publishes a Bonjour service of type <code>_atemmsg._tcp</code> on that same network, which phones running ATEM Tally connect to. The app does not contact the internet at all.</p>
 
 <h2>Crew messages</h2>
-<p>You type the cue and it goes straight to the phones you addressed it to — not through the switcher, and not through any server. On the operator's phone it is shown and then dropped: the text is stored neither there nor here, and it is forwarded nowhere. The panel keeps a note of the last few cues you sent, for as long as the app is open. The operator can switch cues off in ATEM Tally's settings.</p>
+<p>You type the cue and it goes straight to the phones you addressed it to — not through the switcher, and not through any server. The text is shown on the operator's phone and Apple Watch; a cue they did not confirm stays in ATEM Tally's memory, up to the last five, until they confirm it, turn cues off or close the app. The panel keeps the last few cues you sent in memory for as long as the app is open. Neither app saves the text to storage or forwards it anywhere else. The operator can switch cues off in ATEM Tally's settings.</p>
 
 <h2>Permissions</h2>
 <table>
