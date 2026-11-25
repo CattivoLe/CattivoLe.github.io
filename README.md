@@ -8,6 +8,7 @@ Support pages and privacy policies for my apps.
 | Приложение / App | Страницы / Pages |
 | --- | --- |
 | **CoverCast** — Now Playing для винила / for vinyl. iPhone, iPad, Apple TV, Android TV | [О приложении / About](https://cattivole.github.io/covercast/) · [Поддержка / Support](https://cattivole.github.io/covercast/support.html) · [Политика / Privacy](https://cattivole.github.io/covercast/privacy.html) · [Политика Apple TV / Apple TV privacy](https://cattivole.github.io/covercast/privacy-tv.html) |
+| **Learn Notes** («Учить Ноты») — ноты на стане, пианино, слух и гитара / reading music: staff, piano, ear and guitar. iPhone, iPad | [О приложении / About](https://cattivole.github.io/learnnotes/) · [Поддержка / Support](https://cattivole.github.io/learnnotes/support.html) · [Политика / Privacy](https://cattivole.github.io/learnnotes/privacy.html) |
 | **Probe Lab** — карманная лаборатория цифровой безопасности / a pocket digital-security lab. iPhone | [Поддержка / Support](https://cattivole.github.io/probelab/) · [Политика / Privacy](https://cattivole.github.io/probelab/privacy.html) |
 | **Veilix** — секреты внутри обычных фотографий / secrets inside ordinary photos. iPhone, iPad, Android ([исходный код / source](https://github.com/CattivoLe/Veilix)) | [О приложении / About](https://cattivole.github.io/veilix/) · [Поддержка / Support](https://cattivole.github.io/veilix/support.html) · [Политика / Privacy](https://cattivole.github.io/veilix/privacy.html) |
 | **VideoHub Control** — пульт для Blackmagic Videohub и AJA KUMO / a remote for Blackmagic Videohub and AJA KUMO routers. iPhone, iPad | [О приложении / About](https://cattivole.github.io/videohubcontrol/) · [Поддержка / Support](https://cattivole.github.io/videohubcontrol/support.html) · [Политика / Privacy](https://cattivole.github.io/videohubcontrol/privacy.html) |
@@ -15,12 +16,13 @@ Support pages and privacy policies for my apps.
 ## Вопросы и ошибки / Questions and bugs
 
 Создайте обращение в [Issues](https://github.com/CattivoLe/CattivoLe.github.io/issues/new)
-и укажите приложение в заголовке: `[CoverCast] …`, `[Probe Lab] …` или `[VideoHub Control] …`.
+и укажите приложение в заголовке: `[CoverCast] …`, `[Learn Notes] …`, `[Probe Lab] …`
+или `[VideoHub Control] …`.
 Вопросы по Veilix — в [его репозитории](https://github.com/CattivoLe/Veilix/issues).
 Напишите модель устройства, версию системы и что происходило.
 
 Open an [issue](https://github.com/CattivoLe/CattivoLe.github.io/issues/new) with
-the app's name in the title — `[CoverCast] …`, `[Probe Lab] …` or
+the app's name in the title — `[CoverCast] …`, `[Learn Notes] …`, `[Probe Lab] …` or
 `[VideoHub Control] …` — and include
 your device model, system version and what happened.
 Veilix questions go to [its own repository](https://github.com/CattivoLe/Veilix/issues).
@@ -51,6 +53,13 @@ Veilix questions go to [its own repository](https://github.com/CattivoLe/Veilix/
 │   ├── page.css          свой акцент и стили картинок поверх ../style.css
 │   ├── icon.png
 │   └── img/              скриншоты; делает Tools/site_images.py в репозитории CoverCast (пишет сюда)
+├── learnnotes/
+│   ├── index.html        о приложении      → Marketing URL
+│   ├── support.html      поддержка         → Support URL
+│   ├── privacy.html      политика          → Privacy Policy URL (и ссылка в Настройках приложения)
+│   ├── page.css          индиго поверх ../style.css
+│   ├── icon.png
+│   └── img/              скриншоты из StoreAssets/Release-2.2/_raw/iphone репозитория NotesTrainer
 ├── probelab/
 │   ├── index.html        поддержка         → Support URL
 │   ├── privacy.html      политика          → Privacy Policy URL
