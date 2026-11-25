@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATEM Control — поддержка</title>
+<meta name="description" content="ATEM Control для iPhone: что делать, если микшер не подключается, не видно макросов, не приходят сигналы операторам или не работает шейдинг камер.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">ATEM Control</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Поддержка</h1>
+<p class="lead">ATEM Control для iPhone и видеомикшеры Blackmagic ATEM: подключение, макросы, звук, камеры и сигналы операторам.</p>
+
+<p>Нашли ошибку или есть вопрос — создайте обращение в <a href="https://github.com/CattivoLe/ATEMControl/issues">GitHub Issues</a>. Напишите модель микшера, модель iPhone, версию iOS и что происходило.</p>
+<ul class="links">
+  <li><a href="https://github.com/CattivoLe/ATEMControl/issues/new?title=%5BATEM%20Control%5D%20">Сообщить о проблеме</a></li>
+  <li><a href="privacy.html">Политика конфиденциальности</a></li>
+  <li><a href="./">О приложении</a></li>
+</ul>
+
+<h2>Подключение</h2>
+<p><strong>Микшер не подключается.</strong><br>Телефон и микшер должны быть в одной сети. Проверьте адрес микшера в ATEM Software Control и что iPhone не в гостевой сети Wi-Fi: там устройства обычно изолированы друг от друга. В Настройках iOS → Конфиденциальность и безопасность → Локальная сеть доступ для ATEM Control должен быть включён.</p>
+<p><strong>Связь рвётся во время передачи.</strong><br>Микшер держит ограниченное число управляющих подключений. Закройте лишние ATEM Software Control и панели, которые висят на том же микшере.</p>
+<p><strong>Экран гаснет.</strong><br>Пока приложение открыто, оно само не даёт экрану погаснуть. Если экран всё же гаснет, проверьте режим энергосбережения.</p>
+
+<h2>Панель</h2>
+<p><strong>Кнопки не нажимаются.</strong><br>Панель заперта замком в строке подключения — так сделано, чтобы в эфире ничего не нажалось случайно. Нажмите замок ещё раз.</p>
+<p><strong>Как поменять вход на кнопке?</strong><br>Удерживайте кнопку: там же выбирается другой источник и ставится фотография.</p>
+<p><strong>Нет второй ступени ME2.</strong><br>Она появляется только на микшерах с двумя M/E; ATEM Mini их не имеет.</p>
+
+<h2>Макросы</h2>
+<p><strong>Список пуст.</strong><br>Приложение показывает макросы, записанные в самом микшере. Запишите их в ATEM Software Control — в списке появятся имя и описание.</p>
+<p><strong>Макрос остановился и ждёт.</strong><br>В нём есть пауза «ждать оператора»: нажмите «Continue». Остановить совсем — красной кнопкой.</p>
+<p><strong>Жёлтая строка «Contains operations this switcher can't replay».</strong><br>Макрос записан на другой модели и содержит то, чего у этого микшера нет. Запустить можно, но часть шагов пропадёт.</p>
+
+<h2>Сигналы операторам (Crew)</h2>
+<p><strong>«No phones yet», хотя ATEM Tally открыт.</strong><br>Нужна версия ATEM Tally 1.5 или новее: в более ранних приёма сигналов нет. Оба телефона должны быть в одной сети, и обоим приложениям нужен доступ к локальной сети в настройках iOS.</p>
+<p><strong>Сигнал остался «DELIVERED».</strong><br>Значит, он дошёл, но оператор не коснулся карточки. Карточка живёт на его экране восемь секунд.</p>
+<p><strong>Оператор не видит сигналов вовсе.</strong><br>Проверьте у него в ATEM Tally переключатель приёма сигналов и то, что он выбрал свою камеру: адресные сигналы приходят только на выбранный вход.</p>
+<p><strong>Сигналы идут через микшер?</strong><br>Нет. Телефоны находят друг друга по Bonjour и общаются напрямую; микшер о сигналах не знает.</p>
+
+<h2>Звук и камеры</h2>
+<p><strong>Нет фейдеров или они не двигаются.</strong><br>Микшеры с классическим и с Fairlight-микшером поддерживаются оба, но набор входов задаёт сам микшер. Если вход переведён в AFV, уровень ведёт микшер.</p>
+<p><strong>Шейдинг камеры ничего не меняет.</strong><br>Шейдинг идёт к камерам Blackmagic по SDI или HDMI через микшер. Камера должна быть настроена на тот же номер, что и вход микшера, а у HDMI-камер часть параметров недоступна.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Support</h1>
+<p class="lead">ATEM Control for iPhone and Blackmagic ATEM switchers: connecting, macros, audio, cameras and cues to the crew.</p>
+
+<p>Found a bug or have a question — open an issue on <a href="https://github.com/CattivoLe/ATEMControl/issues">GitHub Issues</a>. Include the switcher model, the iPhone model, the iOS version and what happened.</p>
+<ul class="links">
+  <li><a href="https://github.com/CattivoLe/ATEMControl/issues/new?title=%5BATEM%20Control%5D%20">Report a problem</a></li>
+  <li><a href="privacy.html#en">Privacy Policy</a></li>
+  <li><a href="./">About the app</a></li>
+</ul>
+
+<h2>Connecting</h2>
+<p><strong>The switcher will not connect.</strong><br>The phone and the switcher have to be on the same network. Check the switcher's address in ATEM Software Control, and that the iPhone is not on a guest Wi-Fi, where devices are usually isolated from each other. In iOS Settings → Privacy &amp; Security → Local Network, ATEM Control must be allowed.</p>
+<p><strong>The link drops during a show.</strong><br>A switcher accepts a limited number of control connections. Close the copies of ATEM Software Control and the panels still hanging on the same switcher.</p>
+<p><strong>The screen goes dark.</strong><br>While the app is open it keeps the screen awake by itself. If it still sleeps, check Low Power Mode.</p>
+
+<h2>The panel</h2>
+<p><strong>The buttons do nothing.</strong><br>The panel is locked, with the padlock in the connection row — that is there so nothing is pressed by accident on air. Tap the padlock again.</p>
+<p><strong>How do I change the input on a button?</strong><br>Press and hold it: the same place picks another source and adds a photo.</p>
+<p><strong>There is no ME2.</strong><br>It appears only on switchers with two mix effects; the ATEM Mini range has one.</p>
+
+<h2>Macros</h2>
+<p><strong>The list is empty.</strong><br>The app shows the macros stored on the switcher itself. Record them in ATEM Software Control and their names and descriptions will appear.</p>
+<p><strong>A macro stopped and is waiting.</strong><br>It contains a "wait for operator" pause: tap Continue. The red button stops it altogether.</p>
+<p><strong>The amber line "Contains operations this switcher can't replay".</strong><br>The macro was recorded on another model and uses something this switcher does not have. It will run, but those steps are skipped.</p>
+
+<h2>Cues to the crew</h2>
+<p><strong>"No phones yet", though ATEM Tally is open.</strong><br>ATEM Tally 1.5 or later is needed; earlier versions cannot receive cues. Both phones have to be on the same network, and both apps need local network access in iOS Settings.</p>
+<p><strong>A cue is stuck on "DELIVERED".</strong><br>It arrived, but the operator did not tap the card. The card stays on their screen for eight seconds.</p>
+<p><strong>The operator sees no cues at all.</strong><br>Check the cue switch in their ATEM Tally settings, and that they have picked their camera: a cue addressed to a camera only reaches the phone on that input.</p>
+<p><strong>Do cues go through the switcher?</strong><br>No. The phones find each other over Bonjour and talk directly; the switcher knows nothing about them.</p>
+
+<h2>Audio and cameras</h2>
+<p><strong>No faders, or they will not move.</strong><br>Both the classic and the Fairlight mixers are supported, but the switcher decides which inputs exist. When an input is set to AFV, the switcher drives its level.</p>
+<p><strong>Camera shading changes nothing.</strong><br>Shading reaches Blackmagic cameras over SDI or HDMI through the switcher. The camera has to be set to the same number as the switcher input, and on HDMI cameras some parameters are not available.</p>
+</section>
+
+<footer>ATEM Control · <a href="./">О приложении / About</a> · <a href="privacy.html">Политика / Privacy</a></footer>
+</main>
+</body>
+</html>

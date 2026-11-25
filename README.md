@@ -7,6 +7,8 @@ Support pages and privacy policies for my apps.
 
 | Приложение / App | Страницы / Pages |
 | --- | --- |
+| **ATEM Control** — пульт для видеомикшеров Blackmagic ATEM / a control surface for Blackmagic ATEM switchers. iPhone | [О приложении / About](https://cattivole.github.io/atemcontrol/) · [Поддержка / Support](https://cattivole.github.io/atemcontrol/support.html) · [Политика / Privacy](https://cattivole.github.io/atemcontrol/privacy.html) |
+| **ATEM Tally** — сигнал эфира для операторов камер / a tally light for camera operators. iPhone, Apple Watch | [О приложении / About](https://cattivole.github.io/atemtally/) · [Поддержка / Support](https://cattivole.github.io/atemtally/support.html) · [Политика / Privacy](https://cattivole.github.io/atemtally/privacy.html) |
 | **CoverCast** — Now Playing для винила / for vinyl. iPhone, iPad, Apple TV, Android TV | [О приложении / About](https://cattivole.github.io/covercast/) · [Поддержка / Support](https://cattivole.github.io/covercast/support.html) · [Политика / Privacy](https://cattivole.github.io/covercast/privacy.html) · [Политика Apple TV / Apple TV privacy](https://cattivole.github.io/covercast/privacy-tv.html) |
 | **Learn Notes** («Учить Ноты») — ноты на стане, пианино, слух и гитара / reading music: staff, piano, ear and guitar. iPhone, iPad | [О приложении / About](https://cattivole.github.io/learnnotes/) · [Поддержка / Support](https://cattivole.github.io/learnnotes/support.html) · [Политика / Privacy](https://cattivole.github.io/learnnotes/privacy.html) |
 | **Probe Lab** — карманная лаборатория цифровой безопасности / a pocket digital-security lab. iPhone | [Поддержка / Support](https://cattivole.github.io/probelab/) · [Политика / Privacy](https://cattivole.github.io/probelab/privacy.html) |
@@ -16,8 +18,8 @@ Support pages and privacy policies for my apps.
 ## Вопросы и ошибки / Questions and bugs
 
 Создайте обращение в [Issues](https://github.com/CattivoLe/CattivoLe.github.io/issues/new)
-и укажите приложение в заголовке: `[CoverCast] …`, `[Learn Notes] …`, `[Probe Lab] …`
-или `[VideoHub Control] …`.
+и укажите приложение в заголовке: `[ATEM Control] …`, `[ATEM Tally] …`,
+`[CoverCast] …`, `[Learn Notes] …`, `[Probe Lab] …` или `[VideoHub Control] …`.
 Вопросы по Veilix — в [его репозитории](https://github.com/CattivoLe/Veilix/issues).
 Напишите модель устройства, версию системы и что происходило.
 
@@ -64,6 +66,20 @@ Veilix questions go to [its own repository](https://github.com/CattivoLe/Veilix/
 │   ├── index.html        поддержка         → Support URL
 │   ├── privacy.html      политика          → Privacy Policy URL
 │   └── icon.png
+├── atemcontrol/
+│   ├── index.html        о приложении      → Marketing URL
+│   ├── support.html      поддержка         → Support URL
+│   ├── privacy.html      политика          → Privacy Policy URL
+│   ├── page.css          синий акцент и стили картинок поверх ../style.css
+│   ├── icon.png
+│   └── img/              скриншоты из AppStore/Screenshots репозитория ATEMControl
+├── atemtally/
+│   ├── index.html        о приложении      → Marketing URL
+│   ├── support.html      поддержка         → Support URL
+│   ├── privacy.html      политика          → Privacy Policy URL
+│   ├── page.css          красный акцент и стили картинок поверх ../style.css
+│   ├── icon.png
+│   └── img/              скриншоты из AppStore/raw репозитория ATEMTally
 ├── veilix/
 │   ├── index.html        о приложении      → Marketing URL
 │   ├── support.html      поддержка         → Support URL

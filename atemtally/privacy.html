@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATEM Tally — политика конфиденциальности</title>
+<meta name="description" content="ATEM Tally не собирает данные: что приложение хранит на устройстве, с чем соединяется в локальной сети и что происходит с сигналами от режиссёра.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">ATEM Tally</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности</h1>
+<p class="lead">Коротко: ATEM Tally не собирает данные о вас. Приложение разговаривает только с вашим микшером и, если вы оставили сигналы включёнными, с телефоном режиссёра в той же локальной сети.</p>
+<p class="muted">Действует с 25 ноября 2026 года. Относится к приложению ATEM Tally для iPhone и Apple Watch.</p>
+
+<h2>Что мы не делаем</h2>
+<ul>
+  <li>Не собираем и не храним никаких данных на своих серверах: у ATEM Tally нет своих серверов.</li>
+  <li>Нет учётных записей, аналитики, рекламы и отслеживания между приложениями и сайтами.</li>
+  <li>Ничего не продаём и не передаём третьим лицам.</li>
+</ul>
+
+<h2>Что хранится на устройстве</h2>
+<p>Адреса микшеров, к которым вы подключались, выбранный вход и настройки оповещений. Эти данные не покидают устройство и удаляются вместе с приложением.</p>
+
+<h2>Сеть</h2>
+<p>Приложение ищет микшеры в локальной сети по Bonjour <code>_blackmagic._tcp</code> и подключается к выбранному по протоколу Blackmagic на порт 9910. Пока сигналы включены, оно также подключается к телефону с ATEM Control, который объявляет в той же сети службу <code>_atemmsg._tcp</code>. В интернет приложение не обращается.</p>
+
+<h2>Сигналы от режиссёра</h2>
+<p>Сигнал приходит прямо с телефона режиссёра, мимо микшера и мимо каких-либо серверов. Он показывается на экране и забывается: текст не сохраняется и никуда не пересылается. Касание карточки отправляет обратно только отметку «прочитано». Приём сигналов выключается в настройках, и тогда приложение к телефону режиссёра не подключается вовсе.</p>
+
+<h2>Apple Watch</h2>
+<p>Часы получают цвет эфира и текст сигнала с вашего же iPhone по WatchConnectivity. Дальше этой пары устройств данные не уходят.</p>
+
+<h2>Разрешения</h2>
+<table>
+  <tr><th>Разрешение</th><th>Зачем</th></tr>
+  <tr><td>Локальная сеть</td><td>Найти микшер, подключиться к нему и получать сигналы от режиссёра.</td></tr>
+</table>
+
+<h2>Дети</h2>
+<p>Приложение не предназначено специально для детей и не собирает данные ни о ком, включая детей.</p>
+
+<h2>Изменения</h2>
+<p>Если политика изменится, новая версия появится на этой странице с новой датой.</p>
+
+<h2>Связь</h2>
+<p>Вопросы о приватности можно задать на <a href="support.html">странице поддержки</a>.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="lead">In short: ATEM Tally collects no data about you. The app talks only to your switcher and, if you leave cues on, to the operator's phone on the same local network.</p>
+<p class="muted">Effective November 25, 2026. Covers the ATEM Tally app for iPhone and Apple Watch.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>We collect and store no data on our servers: ATEM Tally has no servers of its own.</li>
+  <li>No accounts, analytics, advertising, or tracking across apps and websites.</li>
+  <li>Nothing is sold or shared with third parties.</li>
+</ul>
+
+<h2>What stays on the device</h2>
+<p>The addresses of the switchers you connected to, the input you picked and your alert settings. None of it leaves the device, and deleting the app deletes it.</p>
+
+<h2>Network</h2>
+<p>The app looks for switchers on the local network over Bonjour <code>_blackmagic._tcp</code> and connects to the one you choose over Blackmagic's protocol on UDP port 9910. While cues are on, it also connects to the phone running ATEM Control, which publishes <code>_atemmsg._tcp</code> on that same network. The app does not contact the internet.</p>
+
+<h2>Cues from the gallery</h2>
+<p>A cue comes straight from the operator's phone, not through the switcher and not through any server. It is shown on screen and then dropped: the text is not stored and is forwarded nowhere. Tapping the card sends back a read receipt and nothing else. Turn cues off in settings and the app does not connect to the operator's phone at all.</p>
+
+<h2>Apple Watch</h2>
+<p>The watch receives the tally colour and the cue text from your own iPhone over WatchConnectivity. Nothing travels beyond that pair of devices.</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Local Network</td><td>Find the switcher, connect to it, and receive cues from the operator.</td></tr>
+</table>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no data about anyone, children included.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will appear on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions are welcome on the <a href="support.html#en">support page</a>.</p>
+</section>
+
+<footer>ATEM Tally · <a href="./">О приложении / About</a> · <a href="support.html">Поддержка / Support</a></footer>
+</main>
+</body>
+</html>

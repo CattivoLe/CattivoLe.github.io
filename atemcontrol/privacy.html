@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATEM Control — политика конфиденциальности</title>
+<meta name="description" content="ATEM Control не собирает данные: что приложение хранит на устройстве, с чем соединяется в локальной сети и что происходит с сообщениями операторам камер.">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="page.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">ATEM Control</a>
+  <nav class="lang"><a href="#ru" aria-current="true">RU</a><a href="#en">EN</a></nav>
+</header>
+
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности</h1>
+<p class="lead">Коротко: ATEM Control не собирает данные о вас. Приложение разговаривает только с вашим микшером и с телефонами вашей команды в локальной сети, а всё, что оно запоминает, остаётся на устройстве.</p>
+<p class="muted">Действует с 25 ноября 2026 года. Относится к приложению ATEM Control для iPhone.</p>
+
+<h2>Что мы не делаем</h2>
+<ul>
+  <li>Не собираем и не храним никаких данных на своих серверах: у ATEM Control нет своих серверов.</li>
+  <li>Нет учётных записей, аналитики, рекламы и отслеживания между приложениями и сайтами.</li>
+  <li>Ничего не продаём и не передаём третьим лицам.</li>
+</ul>
+
+<h2>Что хранится на устройстве</h2>
+<p>Адрес микшера, подписи и картинки, которые вы поставили на кнопки источников, список ваших фраз для команды и настройки. Эти данные не покидают устройство и удаляются вместе с приложением.</p>
+
+<h2>Сеть</h2>
+<p>Приложение соединяется с микшером ATEM по адресу, который вы ввели, в вашей локальной сети — по протоколу Blackmagic на порт 9910. Для сообщений команде оно объявляет в той же сети службу Bonjour <code>_atemmsg._tcp</code>, к которой подключаются телефоны с ATEM Tally. В интернет приложение не обращается вовсе.</p>
+
+<h2>Сообщения команде</h2>
+<p>Сигнал набираете вы, и он уходит напрямую тем телефонам, которым адресован, — мимо микшера и мимо каких-либо серверов. На телефоне оператора сигнал показывается и забывается: текст не сохраняется ни там, ни здесь и никуда не пересылается. На пульте остаётся только отметка о последних отправленных сигналах, пока приложение открыто. Оператор может выключить приём в настройках ATEM Tally.</p>
+
+<h2>Разрешения</h2>
+<table>
+  <tr><th>Разрешение</th><th>Зачем</th></tr>
+  <tr><td>Локальная сеть</td><td>Связаться с микшером и найти телефоны операторов с ATEM Tally.</td></tr>
+</table>
+<p>Картинку для кнопки источника вы выбираете в системном окне выбора фото. Оно работает отдельно от приложения и отдаёт ему только выбранный снимок, поэтому доступ к медиатеке приложению не нужен и не запрашивается.</p>
+
+<h2>Дети</h2>
+<p>Приложение не предназначено специально для детей и не собирает данные ни о ком, включая детей.</p>
+
+<h2>Изменения</h2>
+<p>Если политика изменится, новая версия появится на этой странице с новой датой.</p>
+
+<h2>Связь</h2>
+<p>Вопросы о приватности можно задать на <a href="support.html">странице поддержки</a>.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="lead">In short: ATEM Control collects no data about you. The app talks only to your switcher and to your crew's phones on the local network, and whatever it remembers stays on your device.</p>
+<p class="muted">Effective November 25, 2026. Covers the ATEM Control app for iPhone.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>We collect and store no data on our servers: ATEM Control has no servers of its own.</li>
+  <li>No accounts, analytics, advertising, or tracking across apps and websites.</li>
+  <li>Nothing is sold or shared with third parties.</li>
+</ul>
+
+<h2>What stays on the device</h2>
+<p>The switcher address, the labels and pictures you put on source buttons, your list of calls for the crew, and your settings. None of it leaves the device, and deleting the app deletes it.</p>
+
+<h2>Network</h2>
+<p>The app connects to the ATEM switcher at the address you enter, on your local network, over Blackmagic's protocol on UDP port 9910. For crew messages it publishes a Bonjour service of type <code>_atemmsg._tcp</code> on that same network, which phones running ATEM Tally connect to. The app does not contact the internet at all.</p>
+
+<h2>Crew messages</h2>
+<p>You type the cue and it goes straight to the phones you addressed it to — not through the switcher, and not through any server. On the operator's phone it is shown and then dropped: the text is stored neither there nor here, and it is forwarded nowhere. The panel keeps a note of the last few cues you sent, for as long as the app is open. The operator can switch cues off in ATEM Tally's settings.</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Local Network</td><td>Reach the switcher and find the operators' phones running ATEM Tally.</td></tr>
+</table>
+<p>A picture for a source button is chosen in the system photo picker. It runs apart from the app and hands it only the image you picked, so the app needs no access to your photo library and asks for none.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no data about anyone, children included.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will appear on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions are welcome on the <a href="support.html#en">support page</a>.</p>
+</section>
+
+<footer>ATEM Control · <a href="./">О приложении / About</a> · <a href="support.html">Поддержка / Support</a></footer>
+</main>
+</body>
+</html>
